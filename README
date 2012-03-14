@@ -1,0 +1,3 @@
+FoodFast: A demo application for Android.
+
+Uses location-based services and Google Places API to find restaurants and food near the user's present location.
