@@ -12,12 +12,12 @@ public class AppConstants {
 	/**
 	 * Google Maps API key. 
 	 */
-	public static final String MAPS_API_KEY = "0Y5QnXZIBuOfDrV62zePqZE0locZrQylKCboczA";
+	public static final String MAPS_API_KEY = "YOUR MAPS API KEY";
 
 	/**
 	 * Constants for place searches
 	 */
-	private static String PLACES_API_KEY = "AIzaSyCCByMSQGW7LEIkxjuWgUzBDAttH7qsoxc";
+	private static String PLACES_API_KEY = "YOUR PLACES API KEY";
 	public static String PLACES_SEARCH_BASE_URI = "https://maps.googleapis.com/maps/api/place/search/xml?sensor=true";
 	public static String PLACE_DETAILS_SEARCH_BASE_URI = "https://maps.googleapis.com/maps/api/place/details/xml?sensor=true";
 	public static String HTTP_PARAM_API_KEY = "&key=" + PLACES_API_KEY;
