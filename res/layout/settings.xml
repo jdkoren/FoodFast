@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <CheckedTextView
+            android:id="@+id/check_use_gps"
+            style="@style/SettingsCheckbox"
+            android:text="@string/checkbox_use_gps" />
+
+        <TextView
+            style="@style/SettingsDescription"
+            android:text="@string/description_use_gps" />
+
+        <View style="@style/GradientSeparatorThin" />
+
+        <CheckedTextView
+            android:id="@+id/check_allow_active_updates"
+            style="@style/SettingsCheckbox"
+            android:text="@string/checkbox_allow_active_updates" />
+
+        <TextView
+            style="@style/SettingsDescription"
+            android:text="@string/description_allow_active_updates" />
+
+        <View style="@style/GradientSeparatorThin" />
+
+        <CheckedTextView
+            android:id="@+id/check_allow_passive_updates"
+            style="@style/SettingsCheckbox"
+            android:text="@string/checkbox_allow_passive_updates" />
+
+        <TextView
+            style="@style/SettingsDescription"
+            android:text="@string/description_allow_passive_updates" />
+
+        <View style="@style/GradientSeparatorThin" />
+
+        <CheckedTextView
+            android:id="@+id/check_disable_passive_on_exit"
+            style="@style/SettingsCheckbox"
+            android:text="@string/checkbox_disable_passive_on_exit" />
+
+        <TextView
+            style="@style/SettingsDescription"
+            android:text="@string/description_disable_passive_on_exit" />
+
+        <View style="@style/GradientSeparatorThin" />
+
+        <CheckedTextView
+            android:id="@+id/check_preserve_battery"
+            style="@style/SettingsCheckbox"
+            android:nextFocusDown="@id/search_radius"
+            android:text="@string/checkbox_preserve_battery" />
+
+        <TextView
+            style="@style/SettingsDescription"
+            android:text="@string/description_preserve_battery" />
+
+        <View style="@style/GradientSeparatorThin" />
+
+        <LinearLayout
+            android:id="@+id/search_radius"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/list_selector_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusDown="@id/location_sensitivity"
+            android:nextFocusUp="@id/check_preserve_battery"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/SettingsLabel"
+                android:duplicateParentState="true"
+                android:text="@string/label_search_radius" />
+
+            <TextView
+                style="@style/SettingsDescription"
+                android:duplicateParentState="true"
+                android:text="@string/description_search_radius" />
+        </LinearLayout>
+
+        <View style="@style/GradientSeparatorThin" />
+
+        <LinearLayout
+            android:id="@+id/location_sensitivity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/list_selector_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusUp="@id/search_radius"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/SettingsLabel"
+                android:duplicateParentState="true"
+                android:text="@string/label_location_sensitivity" />
+
+            <TextView
+                style="@style/SettingsDescription"
+                android:duplicateParentState="true"
+                android:text="@string/description_location_sensitivity" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

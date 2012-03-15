@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_text">#FFF8F8F8</color>
+    <color name="red187">#FFBB0000</color>
+    <color name="red102">#FF660000</color>
+    <color name="dialog_text">@android:color/primary_text_dark</color>
+    
+</resources>

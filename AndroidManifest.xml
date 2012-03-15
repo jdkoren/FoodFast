@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simbiosys.apps.foodfast"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="11" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="FoodFastApp"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.app" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <!-- Activities for both phones and tablets -->
+
+        <activity
+            android:name=".ui.HomeActivity"
+            android:theme="@style/Theme.app.home" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Phone only -->
+
+        <activity
+            android:name=".ui.phone.PlaceListActivity"
+            android:label="@string/title_place_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/vnd.foodfast.place" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.phone.PlaceDetailActivity"
+            android:label="@string/title_place_detail" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.foodfast.place_detail" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.phone.MapScreenActivity"
+            android:label="@string/title_map_screen" >
+            <intent-filter>
+                <action android:name="com.simbiosys.apps.foodfast.action.VIEW_MAP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/vnd.foodfast.place" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.foodfast.place_detail" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.phone.SettingsActivity"
+            android:label="@string/title_settings" >
+        </activity>
+
+        <!-- Receivers -->
+
+        <receiver android:name=".receiver.LocationChangedReceiver" />
+        <receiver android:name=".receiver.PassiveLocationChangedReceiver" />
+        <receiver android:name=".receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.ConnectivityReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.PowerStateReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW" />
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Services -->
+
+        <service android:name=".service.PlacesUpdateService" />
+        <service android:name=".service.PlacesUpdateServiceEclair" />
+        <service android:name=".service.PlacesUpdateServiceICS" />
+        <service android:name=".service.PlaceDetailsUpdateService" />
+        <service android:name=".service.PlaceDetailsUpdateServiceICS" />
+
+        <!-- Content provider -->
+
+        <provider
+            android:name=".provider.PlacesProvider"
+            android:authorities="com.simbiosys.apps.foodfast" >
+        </provider>
+    </application>
+
+</manifest>

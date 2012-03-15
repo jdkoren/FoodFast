@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App/Activity Titles -->
+
+    <string name="app_name">FoodFast</string>
+    <string name="title_place_detail">Details</string>
+    <string name="title_place_list">Nearby</string>
+    <string name="title_map_screen">Nearby</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Button/CheckBox/UI Labels -->
+
+    <string name="home_btn_list_places">List Nearby</string>
+    <string name="home_btn_map_places">Map Nearby</string>
+    <string name="home_btn_settings">Settings</string>
+    <string name="btn_call_phone">Call</string>
+    <string name="btn_map_all">Map All</string>
+    <string name="btn_navigate_to">Navigate To</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_view_on_map">View on Map</string>
+    <string name="btn_visit_website">Visit Website</string>
+    <string name="checkbox_allow_active_updates">Allow Active Updates</string>
+    <string name="checkbox_disable_passive_on_exit">Disable Passive Updates on Close</string>
+    <string name="checkbox_use_gps">Use GPS</string>
+    <string name="checkbox_allow_passive_updates">Allow Passive Updates</string>
+    <string name="checkbox_preserve_battery">Preserve Battery</string>
+    <string name="label_search_radius">Search Radius</string>
+    <string name="label_location_sensitivity">Location Sensitivity</string>
+
+    <!-- Dialog stuff -->
+
+    <string name="dialog_title_about">About</string>
+    <string name="dialog_title_search_radius">Edit Search Radius</string>
+    <string name="dialog_title_location_sensitivity">Edit Location Sensitivity</string>
+    <string name="dialog_message_search_radius">Enter the search radius (in meters) to use for finding nearby places. Default value is 150.</string>
+    <string name="dialog_message_location_sensitivity">Enter the distance (in meters) you should move before registering a location update. Use smaller values for sooner updates. Default value is 75.</string>
+    <string name="dialog_message_about_header_build">Build Info</string>
+    <string name="dialog_message_about_header_features">New Features</string>
+    <string name="dialog_message_about_header_privacy">Privacy Policy</string>
+    <string name="dialog_message_about_body_build">Version: 1.0</string>
+    <string name="dialog_message_about_body_features">- Google Maps and Places API integration\n- Smart location-based services\n- Single APK support for Android 2.1 and above\n- Honeycomb and ICS UI possibly coming soon</string>
+    <string name="dialog_message_about_body_general">FoodFast uses location-based services along with the Google Places API to show you the nearest restaurants and eateries close to your location. FoodFast is a sample application built for Simbiosys Corp. as a proof of concept.</string>
+    <string name="dialog_message_about_body_privacy">FoodFast does not access or collect your personal information. Your geographical location is used only to find nearby points of edible interest. FoodFast does not store location history; each new update replaces the previous one.</string>
+
+    <!-- Content descriptions -->
+
+    <string name="description_home">Home</string>
+    <string name="description_logo">FoodFast</string>
+    <string name="description_btn_call">Call</string>
+    <string name="description_btn_map_all">Map All</string>
+    <string name="description_btn_navigate">Navigate To</string>
+    <string name="description_btn_share">Share</string>
+    <string name="description_btn_view_on_map">View on Map</string>
+    <string name="description_btn_website">Visit Website</string>
+    <string name="description_img_place_thumbnail">Place Image</string>
+    <string name="description_menu_about">About</string>
+    <string name="description_menu_map">Map</string>
+    <string name="description_menu_refresh">Refresh</string>
+    <string name="description_menu_settings">Settings</string>
+    <string name="description_menu_share">Share</string>
+    <string name="description_allow_active_updates">Let FoodFast follow your location in realtime while in the foregound.</string>
+    <string name="description_allow_passive_updates">Let FoodFast receive updates from other apps that use location services while FoodFast is in the background.</string>
+    <string name="description_disable_passive_on_exit">Turn off passive location updates when you explicitly close FoodFast.</string>
+    <string name="description_preserve_battery">Avoid using data connection when battery is low.</string>
+    <string name="description_use_gps">Use GPS satellites when available.</string>
+    <string name="description_search_radius">Set search radius (in meters) for finding nearby places.</string>
+    <string name="description_location_sensitivity">Set the distance (in meters) you should move before receiving a location update.</string>
+
+    <!-- Util. -->
+
+    <string name="share_subject">Check out this place!</string>
+    <string name="share_text">I found this amazing place!</string>
+    <string name="update_service_error">Error connecting to service.</string>
+    <string name="place_list_empty">No results found nearby. Move closer to something tasty, or adjust the search radius in Settings.</string>
+
+    <!-- Misc. -->
+
+    <string name="click_for_details">"(click for details) "</string>
+    <string name="loading">Loading...</string>
+    <string name="setting_saved">Setting saved</string>
+    <string name="btn_view_map">View Map</string>
+    <string name="description_btn_view_map">Vew Map</string>
+
+</resources>

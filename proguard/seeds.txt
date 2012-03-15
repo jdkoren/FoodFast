@@ -1,0 +1,38 @@
+android.support.v4.app.BackStackState
+android.support.v4.app.BackStackState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.Fragment$SavedState
+android.support.v4.app.Fragment$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentActivity
+android.support.v4.app.FragmentManagerState
+android.support.v4.app.FragmentManagerState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentState
+android.support.v4.app.FragmentState: android.os.Parcelable$Creator CREATOR
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status[] values()
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String)
+android.support.v4.view.PagerTitleStrip
+android.support.v4.view.PagerTitleStrip: PagerTitleStrip(android.content.Context,android.util.AttributeSet)
+android.support.v4.view.ViewPager
+android.support.v4.view.ViewPager: ViewPager(android.content.Context,android.util.AttributeSet)
+android.support.v4.view.ViewPager$LayoutParams
+android.support.v4.view.ViewPager$LayoutParams: ViewPager$LayoutParams(android.content.Context,android.util.AttributeSet)
+android.support.v4.view.ViewPager$SavedState
+android.support.v4.view.ViewPager$SavedState: android.os.Parcelable$Creator CREATOR
+com.simbiosys.apps.foodfast.FoodFastApp
+com.simbiosys.apps.foodfast.provider.PlacesProvider
+com.simbiosys.apps.foodfast.receiver.BootReceiver
+com.simbiosys.apps.foodfast.receiver.ConnectivityReceiver
+com.simbiosys.apps.foodfast.receiver.LocationChangedReceiver
+com.simbiosys.apps.foodfast.receiver.PassiveLocationChangedReceiver
+com.simbiosys.apps.foodfast.receiver.PowerStateReceiver
+com.simbiosys.apps.foodfast.service.PlaceDetailsUpdateService
+com.simbiosys.apps.foodfast.service.PlaceDetailsUpdateServiceICS
+com.simbiosys.apps.foodfast.service.PlacesUpdateService
+com.simbiosys.apps.foodfast.service.PlacesUpdateServiceEclair
+com.simbiosys.apps.foodfast.service.PlacesUpdateServiceICS
+com.simbiosys.apps.foodfast.ui.BaseActivity
+com.simbiosys.apps.foodfast.ui.BaseSinglePaneActivity
+com.simbiosys.apps.foodfast.ui.HomeActivity
+com.simbiosys.apps.foodfast.ui.phone.MapScreenActivity
+com.simbiosys.apps.foodfast.ui.phone.PlaceDetailActivity
+com.simbiosys.apps.foodfast.ui.phone.PlaceListActivity
+com.simbiosys.apps.foodfast.ui.phone.SettingsActivity

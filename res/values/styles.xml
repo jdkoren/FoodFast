@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.app" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- for programmatic instantiation -->
+        <item name="actionbarCompatButtonStyle">@style/ActionBarCompatButton</item>
+        <item name="actionbarCompatSeparatorStyle">@style/ActionBarCompatSeparator</item>
+        <item name="actionbarCompatLogoStyle">@style/ActionBarCompatLogo</item>
+        <item name="actionbarCompatTextStyle">@style/ActionBarCompatText</item>
+        <item name="actionbarCompatProgressIndicatorStyle">@style/ActionBarCompatProgressIndicator</item>
+    </style>
+
+    <style name="Theme.app.home" parent="style/Theme.app">
+        <item name="android:windowBackground">@drawable/background_checkerboard</item>
+    </style>
+
+    <style name="ActionBarCompat">
+        <item name="android:id">@id/actionbar_compat</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_compat_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/actionbar_compat_background</item>
+    </style>
+
+    <style name="ActionBarCompatSeparator">
+        <item name="android:layout_width">2px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/actionbar_compat_separator</item>
+    </style>
+
+    <style name="ActionBarCompatButton">
+        <item name="android:layout_width">@dimen/actionbar_compat_height</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/actionbar_compat_button</item>
+    </style>
+
+    <style name="ActionBarCompatLogo">
+        <item name="android:id">@id/actionbar_compat_logo</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:clickable">false</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:src">@drawable/actionbar_compat_logo</item>
+    </style>
+
+    <style name="ActionBarCompatText">
+        <item name="android:id">@id/actionbar_compat_text</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/actionbar_text</item>
+        <item name="android:shadowColor">#000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.00001</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ActionBarCompatProgressIndicator" parent="android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="DashboardButton" parent="android:Widget.Button">
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:shadowColor">#fff</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.0001</item>
+    </style>
+
+    <style name="PlaceName">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="PlaceAddress">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="PlacePhone" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:autoLink">phone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="PlaceDistance" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="PlaceDetailActionButton">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:enabled">false</item>
+        <item name="android:background">@android:drawable/list_selector_background</item>
+        <item name="android:paddingLeft">@dimen/place_detail_action_btn_padding_left_right</item>
+        <item name="android:paddingRight">@dimen/place_detail_action_btn_padding_left_right</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="DropdownActionButton" parent="android:Widget.ImageButton">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="GradientSeparatorThin">
+        <item name="android:background">@drawable/gradient_separator_gray</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="GradientSeparatorThick">
+        <item name="android:background">@drawable/gradient_separator_red</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="SettingsText">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="SettingsCheckbox" parent="SettingsText">
+        <item name="android:checkMark">?android:attr/listChoiceIndicatorMultiple</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SettingsDescription" parent="SettingsText">
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="SettingsLabel" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AboutDialogText" parent="android:Widget.TextView">
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textColor">@color/dialog_text</item>
+        <item name="android:textSize">@dimen/text_size_vsmall</item>
+    </style>
+
+    <style name="AboutDialogHeader" parent="AboutDialogText">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

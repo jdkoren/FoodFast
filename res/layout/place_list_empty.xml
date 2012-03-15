@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="@dimen/place_list_empty_text_padding_left_right"
+        android:paddingRight="@dimen/place_list_empty_text_padding_left_right"
+        android:text="@string/place_list_empty"
+        android:textSize="@dimen/text_size_medium" />
+
+    <View style="@style/GradientSeparatorThick" />
+
+    <Button
+        android:id="@+id/btn_view_map"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/list_selector_background"
+        android:contentDescription="@string/description_btn_view_map"
+        android:drawableRight="@drawable/btn_map"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="5dp"
+        android:text="@string/btn_view_map"
+        android:textStyle="bold" />
+
+</LinearLayout>

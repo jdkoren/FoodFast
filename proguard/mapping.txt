@@ -1,0 +1,1424 @@
+android.support.v4.app.BackStackRecord -> android.support.v4.app.a:
+    android.support.v4.app.FragmentManagerImpl mManager -> a
+    android.support.v4.app.BackStackRecord$Op mHead -> b
+    android.support.v4.app.BackStackRecord$Op mTail -> c
+    int mNumOp -> d
+    int mEnterAnim -> e
+    int mExitAnim -> f
+    int mPopEnterAnim -> g
+    int mPopExitAnim -> h
+    int mTransition -> i
+    int mTransitionStyle -> j
+    boolean mAddToBackStack -> k
+    boolean mAllowAddToBackStack -> l
+    java.lang.String mName -> m
+    boolean mCommitted -> n
+    int mIndex -> o
+    int mBreadCrumbTitleRes -> p
+    java.lang.CharSequence mBreadCrumbTitleText -> q
+    int mBreadCrumbShortTitleRes -> r
+    java.lang.CharSequence mBreadCrumbShortTitleText -> s
+    void dump$ec96877(java.lang.String,java.io.PrintWriter) -> a
+    void addOp(android.support.v4.app.BackStackRecord$Op) -> a
+    android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String) -> a
+    android.support.v4.app.FragmentTransaction add$2fdc650e(android.support.v4.app.Fragment) -> a
+    void doAddOp$39f1d44b(int,android.support.v4.app.Fragment,java.lang.String) -> a
+    android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment) -> b
+    void bumpBackStackNesting(int) -> a
+    int commit() -> a
+    int commitAllowingStateLoss() -> b
+    int commitInternal(boolean) -> b
+    void run() -> run
+    void popFromBackStack(boolean) -> a
+android.support.v4.app.BackStackRecord$Op -> android.support.v4.app.b:
+    android.support.v4.app.BackStackRecord$Op next -> a
+    android.support.v4.app.BackStackRecord$Op prev -> b
+    int cmd -> c
+    android.support.v4.app.Fragment fragment -> d
+    int enterAnim -> e
+    int exitAnim -> f
+    int popEnterAnim -> g
+    int popExitAnim -> h
+    java.util.ArrayList removed -> i
+android.support.v4.app.BackStackState -> android.support.v4.app.BackStackState:
+    int[] mOps -> a
+    int mTransition -> b
+    int mTransitionStyle -> c
+    java.lang.String mName -> d
+    int mIndex -> e
+    int mBreadCrumbTitleRes -> f
+    java.lang.CharSequence mBreadCrumbTitleText -> g
+    int mBreadCrumbShortTitleRes -> h
+    java.lang.CharSequence mBreadCrumbShortTitleText -> i
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.BackStackRecord instantiate(android.support.v4.app.FragmentManagerImpl) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.BackStackState$1 -> android.support.v4.app.c:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.DialogFragment -> android.support.v4.app.d:
+    int mStyle -> a
+    int mTheme -> b
+    boolean mCancelable -> c
+    boolean mShowsDialog -> d
+    int mBackStackId -> e
+    android.app.Dialog mDialog -> f
+    boolean mDestroyed -> g
+    boolean mRemoved -> h
+    void show(android.support.v4.app.FragmentManager,java.lang.String) -> a
+    void onCreate(android.os.Bundle) -> a
+    android.view.LayoutInflater getLayoutInflater(android.os.Bundle) -> b
+    android.app.Dialog onCreateDialog$5709b310() -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+    void onDismiss(android.content.DialogInterface) -> onDismiss
+    void onActivityCreated(android.os.Bundle) -> c
+    void onStart() -> b
+    void onSaveInstanceState(android.os.Bundle) -> d
+    void onStop() -> c
+    void onDestroyView() -> d
+android.support.v4.app.Fragment -> android.support.v4.app.Fragment:
+    java.util.HashMap sClassMap -> a
+    int mState -> i
+    android.view.View mAnimatingAway -> j
+    int mStateAfterAnimating -> k
+    android.os.Bundle mSavedFragmentState -> l
+    android.util.SparseArray mSavedViewState -> m
+    int mIndex -> n
+    java.lang.String mWho -> o
+    android.os.Bundle mArguments -> p
+    android.support.v4.app.Fragment mTarget -> q
+    int mTargetIndex -> r
+    int mTargetRequestCode -> s
+    boolean mAdded -> t
+    boolean mRemoving -> u
+    boolean mResumed -> v
+    boolean mFromLayout -> w
+    boolean mInLayout -> x
+    boolean mRestored -> y
+    int mBackStackNesting -> z
+    android.support.v4.app.FragmentManagerImpl mFragmentManager -> A
+    android.support.v4.app.FragmentActivity mActivity -> B
+    int mFragmentId -> C
+    int mContainerId -> D
+    java.lang.String mTag -> E
+    boolean mHidden -> F
+    boolean mDetached -> G
+    boolean mRetainInstance -> H
+    boolean mRetaining -> I
+    boolean mHasMenu -> J
+    boolean mMenuVisible -> K
+    boolean mCalled -> L
+    int mNextAnim -> M
+    android.view.ViewGroup mContainer -> N
+    android.view.View mView -> O
+    android.view.View mInnerView -> P
+    boolean mDeferStart -> Q
+    boolean mUserVisibleHint -> R
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> S
+    boolean mLoadersStarted -> T
+    boolean mCheckedForLoaderManager -> U
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String) -> a
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String,android.os.Bundle) -> a
+    void restoreViewState() -> e
+    void setIndex(int) -> a_
+    boolean isInBackStack() -> f
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    void setArguments(android.os.Bundle) -> e
+    android.os.Bundle getArguments() -> g
+    android.support.v4.app.FragmentActivity getActivity() -> h
+    android.content.res.Resources getResources() -> i
+    android.support.v4.app.FragmentManager getFragmentManager() -> j
+    boolean isResumed() -> k
+    void onHiddenChanged$1385ff() -> l
+    void setHasOptionsMenu$1385ff() -> m
+    android.support.v4.app.LoaderManager getLoaderManager() -> n
+    void startActivity(android.content.Intent) -> a
+    void onActivityResult$6eb84b52() -> o
+    android.view.LayoutInflater getLayoutInflater(android.os.Bundle) -> b
+    void onInflate$423a76cd() -> p
+    void onAttach(android.app.Activity) -> a
+    android.view.animation.Animation onCreateAnimation$24236ca7() -> q
+    void onCreate(android.os.Bundle) -> a
+    android.view.View onCreateView$469ccb8a(android.view.LayoutInflater,android.view.ViewGroup) -> a
+    void onViewCreated(android.view.View,android.os.Bundle) -> a
+    void onActivityCreated(android.os.Bundle) -> c
+    void onStart() -> b
+    void onResume() -> r
+    void onSaveInstanceState(android.os.Bundle) -> d
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onPause() -> s
+    void onStop() -> c
+    void onLowMemory() -> onLowMemory
+    void onDestroyView() -> d
+    void onDestroy() -> t
+    void initState() -> u
+    void onDetach() -> v
+    void onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    void onPrepareOptionsMenu$1eec55bd() -> w
+    void onDestroyOptionsMenu() -> x
+    boolean onOptionsItemSelected(android.view.MenuItem) -> a
+    void onOptionsMenuClosed$1eec55bd() -> y
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected$1b88ab4c() -> z
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void performStart() -> A
+    void performStop() -> B
+    void performReallyStop() -> C
+    void performDestroyView() -> D
+android.support.v4.app.Fragment$InstantiationException -> android.support.v4.app.e:
+android.support.v4.app.Fragment$SavedState -> android.support.v4.app.Fragment$SavedState:
+    android.os.Bundle mState -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.Fragment$SavedState$1 -> android.support.v4.app.f:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentActivity -> android.support.v4.app.FragmentActivity:
+    android.os.Handler mHandler -> a
+    android.support.v4.app.FragmentManagerImpl mFragments -> b
+    boolean mCreated -> c
+    boolean mResumed -> d
+    boolean mStopped -> e
+    boolean mReallyStopped -> f
+    boolean mRetaining -> g
+    boolean mOptionsMenuInvalidated -> h
+    boolean mCheckedForLoaderManager -> i
+    boolean mLoadersStarted -> j
+    android.support.v4.app.HCSparseArray mAllLoaderManagers -> k
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> l
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onBackPressed() -> onBackPressed
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreatePanelMenu(int,android.view.Menu) -> onCreatePanelMenu
+    android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet) -> onCreateView
+    void onDestroy() -> onDestroy
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onLowMemory() -> onLowMemory
+    boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
+    void onPanelClosed(int,android.view.Menu) -> onPanelClosed
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onPostResume() -> onPostResume
+    boolean onPreparePanel(int,android.view.View,android.view.Menu) -> onPreparePanel
+    java.lang.Object onRetainNonConfigurationInstance() -> onRetainNonConfigurationInstance
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void supportInvalidateOptionsMenu() -> b_
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> dump
+    void doReallyStop(boolean) -> a
+    void onAttachFragment$65850823() -> b
+    android.support.v4.app.FragmentManager getSupportFragmentManager() -> c
+    void startActivityForResult(android.content.Intent,int) -> startActivityForResult
+    void startActivityFromFragment$68747257(android.content.Intent) -> a
+    void invalidateSupportFragmentIndex(int) -> a
+    android.support.v4.app.LoaderManagerImpl getLoaderManager(int,boolean,boolean) -> a
+    boolean isRouteDisplayed() -> isRouteDisplayed
+android.support.v4.app.FragmentActivity$1 -> android.support.v4.app.g:
+    android.support.v4.app.FragmentActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+android.support.v4.app.FragmentActivity$FragmentTag -> android.support.v4.app.h:
+    int[] Fragment -> a
+android.support.v4.app.FragmentActivity$NonConfigurationInstances -> android.support.v4.app.i:
+    java.lang.Object activity -> a
+    java.lang.Object custom -> b
+    java.util.HashMap children -> c
+    java.util.ArrayList fragments -> d
+    android.support.v4.app.HCSparseArray loaders -> e
+android.support.v4.app.FragmentManager -> android.support.v4.app.j:
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    void popBackStack$255f295(int) -> a
+android.support.v4.app.FragmentManagerImpl -> android.support.v4.app.k:
+    boolean DEBUG -> a
+    boolean HONEYCOMB -> b
+    java.util.ArrayList mPendingActions -> c
+    java.lang.Runnable[] mTmpActions -> d
+    boolean mExecutingActions -> e
+    java.util.ArrayList mActive -> f
+    java.util.ArrayList mAdded -> g
+    java.util.ArrayList mAvailIndices -> h
+    java.util.ArrayList mBackStack -> i
+    java.util.ArrayList mCreatedMenus -> j
+    java.util.ArrayList mBackStackIndices -> k
+    java.util.ArrayList mAvailBackStackIndices -> l
+    java.util.ArrayList mBackStackChangeListeners -> m
+    int mCurState -> n
+    android.support.v4.app.FragmentActivity mActivity -> o
+    boolean mNeedMenuInvalidate -> p
+    boolean mStateSaved -> q
+    boolean mDestroyed -> r
+    java.lang.String mNoTransactionsBecause -> s
+    boolean mHavePendingDeferredStart -> t
+    android.os.Bundle mStateBundle -> u
+    android.util.SparseArray mStateArray -> v
+    java.lang.Runnable mExecCommit -> w
+    android.view.animation.Interpolator DECELERATE_QUINT -> x
+    android.view.animation.Interpolator DECELERATE_CUBIC -> y
+    android.view.animation.Interpolator ACCELERATE_QUINT -> z
+    android.view.animation.Interpolator ACCELERATE_CUBIC -> A
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    boolean popBackStackImmediate() -> b
+    void popBackStack$255f295(int) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    android.view.animation.Animation makeOpenCloseAnimation$376f30fd(float,float,float,float) -> a
+    android.view.animation.Animation makeFadeAnimation$424ea1bd(float,float) -> a
+    android.view.animation.Animation loadAnimation(android.support.v4.app.Fragment,int,boolean,int) -> a
+    void moveToState(android.support.v4.app.Fragment,int,int,int) -> a
+    void moveToState(android.support.v4.app.Fragment) -> a
+    void moveToState$2563266(int) -> e
+    void moveToState(int,int,int,boolean) -> a
+    void startPendingDeferredFragments() -> c
+    void addFragment(android.support.v4.app.Fragment,boolean) -> a
+    void removeFragment(android.support.v4.app.Fragment,int,int) -> a
+    void hideFragment(android.support.v4.app.Fragment,int,int) -> b
+    void showFragment(android.support.v4.app.Fragment,int,int) -> c
+    void detachFragment(android.support.v4.app.Fragment,int,int) -> d
+    void attachFragment(android.support.v4.app.Fragment,int,int) -> e
+    android.support.v4.app.Fragment findFragmentById(int) -> b
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+    void checkStateLoss() -> t
+    void enqueueAction(java.lang.Runnable,boolean) -> a
+    int allocBackStackIndex(android.support.v4.app.BackStackRecord) -> a
+    void setBackStackIndex(int,android.support.v4.app.BackStackRecord) -> a
+    void freeBackStackIndex(int) -> c
+    boolean execPendingActions() -> d
+    void reportBackStackChanged() -> u
+    void addBackStackState(android.support.v4.app.BackStackRecord) -> b
+    boolean popBackStackState$68507953$44bd8ea3(int,int) -> a
+    java.util.ArrayList retainNonConfig() -> e
+    void saveFragmentViewState(android.support.v4.app.Fragment) -> b
+    android.os.Parcelable saveAllState() -> f
+    void restoreAllState(android.os.Parcelable,java.util.ArrayList) -> a
+    void attachActivity(android.support.v4.app.FragmentActivity) -> a
+    void noteStateNotSaved() -> g
+    void dispatchCreate() -> h
+    void dispatchActivityCreated() -> i
+    void dispatchStart() -> j
+    void dispatchResume() -> k
+    void dispatchPause() -> l
+    void dispatchStop() -> m
+    void dispatchReallyStop() -> n
+    void dispatchDestroy() -> o
+    void dispatchConfigurationChanged(android.content.res.Configuration) -> a
+    void dispatchLowMemory() -> p
+    boolean dispatchCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean dispatchPrepareOptionsMenu$1eec55b9() -> q
+    boolean dispatchOptionsItemSelected(android.view.MenuItem) -> a
+    boolean dispatchContextItemSelected$1b88ab4c() -> r
+    void dispatchOptionsMenuClosed$1eec55bd() -> s
+    int reverseTransit(int) -> d
+android.support.v4.app.FragmentManagerImpl$1 -> android.support.v4.app.l:
+    android.support.v4.app.FragmentManagerImpl this$0 -> a
+    void run() -> run
+android.support.v4.app.FragmentManagerImpl$4 -> android.support.v4.app.m:
+    int val$id -> a
+    int val$flags -> b
+    android.support.v4.app.FragmentManagerImpl this$0 -> c
+    void run() -> run
+android.support.v4.app.FragmentManagerImpl$5 -> android.support.v4.app.n:
+    android.support.v4.app.Fragment val$fragment -> a
+    android.support.v4.app.FragmentManagerImpl this$0 -> b
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+android.support.v4.app.FragmentManagerState -> android.support.v4.app.FragmentManagerState:
+    android.support.v4.app.FragmentState[] mActive -> a
+    int[] mAdded -> b
+    android.support.v4.app.BackStackState[] mBackStack -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentManagerState$1 -> android.support.v4.app.o:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentState -> android.support.v4.app.FragmentState:
+    java.lang.String mClassName -> a
+    int mIndex -> b
+    boolean mFromLayout -> c
+    int mFragmentId -> d
+    int mContainerId -> e
+    java.lang.String mTag -> f
+    boolean mRetainInstance -> g
+    boolean mDetached -> h
+    android.os.Bundle mArguments -> i
+    android.os.Bundle mSavedFragmentState -> j
+    android.support.v4.app.Fragment mInstance -> k
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.Fragment instantiate(android.support.v4.app.FragmentActivity) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentState$1 -> android.support.v4.app.p:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTransaction -> android.support.v4.app.q:
+    android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String) -> a
+    android.support.v4.app.FragmentTransaction add$2fdc650e(android.support.v4.app.Fragment) -> a
+    android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment) -> b
+    int commit() -> a
+    int commitAllowingStateLoss() -> b
+android.support.v4.app.HCSparseArray -> android.support.v4.app.r:
+    java.lang.Object DELETED -> a
+    boolean mGarbage -> b
+    int[] mKeys -> c
+    java.lang.Object[] mValues -> d
+    int mSize -> e
+    java.lang.Object get(int) -> a
+    void remove(int) -> b
+    void removeAt(int) -> c
+    void gc() -> c
+    void put(int,java.lang.Object) -> a
+    int size() -> a
+    int keyAt(int) -> d
+    java.lang.Object valueAt(int) -> e
+    void clear() -> b
+    int binarySearch$76412d8d(int[],int,int) -> a
+    int idealIntArraySize(int) -> f
+android.support.v4.app.ListFragment -> android.support.v4.app.s:
+    android.os.Handler mHandler -> V
+    java.lang.Runnable mRequestFocus -> W
+    android.widget.AdapterView$OnItemClickListener mOnClickListener -> X
+    android.widget.ListAdapter mAdapter -> a
+    android.widget.ListView mList -> b
+    android.view.View mEmptyView -> c
+    android.widget.TextView mStandardEmptyView -> d
+    android.view.View mProgressContainer -> e
+    android.view.View mListContainer -> f
+    java.lang.CharSequence mEmptyText -> g
+    boolean mListShown -> h
+    android.view.View onCreateView$469ccb8a(android.view.LayoutInflater,android.view.ViewGroup) -> a
+    void onViewCreated(android.view.View,android.os.Bundle) -> a
+    void onDestroyView() -> d
+    void onListItemClick$42a3bb55(int) -> b
+    void setListAdapter(android.widget.ListAdapter) -> a
+    android.widget.ListView getListView() -> a
+    void setEmptyText(java.lang.CharSequence) -> a
+    void setListShown(boolean) -> a
+    void setListShownNoAnimation$1385ff() -> E
+    void setListShown(boolean,boolean) -> a
+    void ensureList() -> F
+android.support.v4.app.ListFragment$1 -> android.support.v4.app.t:
+    android.support.v4.app.ListFragment this$0 -> a
+    void run() -> run
+android.support.v4.app.ListFragment$2 -> android.support.v4.app.u:
+    android.support.v4.app.ListFragment this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+android.support.v4.app.LoaderManager -> android.support.v4.app.v:
+    android.support.v4.content.Loader initLoader$71be8de6(int,android.support.v4.app.LoaderManager$LoaderCallbacks) -> a
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManager$LoaderCallbacks -> android.support.v4.app.w:
+    android.support.v4.content.Loader onCreateLoader$e57f803(int) -> a
+    void onLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    void onLoaderReset$5dda1f52() -> a_
+android.support.v4.app.LoaderManagerImpl -> android.support.v4.app.x:
+    boolean DEBUG -> a
+    android.support.v4.app.HCSparseArray mLoaders -> b
+    android.support.v4.app.HCSparseArray mInactiveLoaders -> c
+    android.support.v4.app.FragmentActivity mActivity -> d
+    boolean mStarted -> e
+    boolean mRetaining -> f
+    boolean mCreatingLoader -> g
+    void updateActivity(android.support.v4.app.FragmentActivity) -> a
+    android.support.v4.app.LoaderManagerImpl$LoaderInfo createAndInstallLoader$348a764a(int,android.support.v4.app.LoaderManager$LoaderCallbacks) -> b
+    void installLoader(android.support.v4.app.LoaderManagerImpl$LoaderInfo) -> a
+    android.support.v4.content.Loader initLoader$71be8de6(int,android.support.v4.app.LoaderManager$LoaderCallbacks) -> a
+    void doStart() -> b
+    void doStop() -> c
+    void doRetain() -> d
+    void finishRetain() -> e
+    void doReportNextStart() -> f
+    void doReportStart() -> g
+    void doDestroy() -> h
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManagerImpl$LoaderInfo -> android.support.v4.app.y:
+    int mId -> a
+    android.os.Bundle mArgs -> b
+    android.support.v4.app.LoaderManager$LoaderCallbacks mCallbacks -> c
+    android.support.v4.content.Loader mLoader -> d
+    boolean mHaveData -> e
+    boolean mDeliveredData -> f
+    java.lang.Object mData -> g
+    boolean mStarted -> h
+    boolean mRetaining -> i
+    boolean mRetainingStarted -> j
+    boolean mReportNextStart -> k
+    boolean mDestroyed -> l
+    boolean mListenerRegistered -> m
+    android.support.v4.app.LoaderManagerImpl$LoaderInfo mPendingLoader -> n
+    android.support.v4.app.LoaderManagerImpl this$0 -> o
+    void start() -> a
+    void stop() -> b
+    void destroy() -> c
+    void onLoadComplete(android.support.v4.content.Loader,java.lang.Object) -> a
+    void callOnLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> b
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.app.NoSaveStateFrameLayout -> android.support.v4.app.z:
+    android.view.ViewGroup wrap(android.view.View) -> a
+    void dispatchSaveInstanceState(android.util.SparseArray) -> dispatchSaveInstanceState
+    void dispatchRestoreInstanceState(android.util.SparseArray) -> dispatchRestoreInstanceState
+android.support.v4.app.SuperNotCalledException -> android.support.v4.app.aa:
+android.support.v4.content.AsyncTaskLoader -> android.support.v4.a.a:
+    android.support.v4.content.AsyncTaskLoader$LoadTask mTask -> a
+    android.support.v4.content.AsyncTaskLoader$LoadTask mCancellingTask -> b
+    long mUpdateThrottle -> c
+    long mLastLoadCompleteTime -> d
+    android.os.Handler mHandler -> e
+    void onForceLoad() -> a
+    boolean cancelLoad() -> b
+    void onCanceled(java.lang.Object) -> a
+    void executePendingTask() -> c
+    void dispatchOnCancelled(android.support.v4.content.AsyncTaskLoader$LoadTask,java.lang.Object) -> a
+    java.lang.Object loadInBackground() -> d
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.content.AsyncTaskLoader$LoadTask -> android.support.v4.a.b:
+    java.lang.Object result -> a
+    boolean waiting -> b
+    java.util.concurrent.CountDownLatch done -> e
+    android.support.v4.content.AsyncTaskLoader this$0 -> c
+    void onPostExecute(java.lang.Object) -> a
+    void onCancelled() -> a
+    void run() -> run
+    java.lang.Object doInBackground$42af7916() -> b
+android.support.v4.content.CursorLoader -> android.support.v4.a.c:
+    android.support.v4.content.Loader$ForceLoadContentObserver mObserver -> f
+    android.net.Uri mUri -> g
+    java.lang.String[] mProjection -> h
+    java.lang.String mSelection -> i
+    java.lang.String[] mSelectionArgs -> j
+    java.lang.String mSortOrder -> k
+    android.database.Cursor mCursor -> l
+    void deliverResult(android.database.Cursor) -> a
+    void onStartLoading() -> e
+    void onStopLoading() -> f
+    void onReset() -> g
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    java.lang.Object loadInBackground() -> d
+    void onCanceled(java.lang.Object) -> a
+    void deliverResult(java.lang.Object) -> b
+android.support.v4.content.Loader -> android.support.v4.a.d:
+    int mId -> m
+    android.support.v4.content.Loader$OnLoadCompleteListener mListener -> n
+    android.content.Context mContext -> o
+    boolean mStarted -> p
+    boolean mAbandoned -> q
+    boolean mReset -> r
+    boolean mContentChanged -> s
+    void deliverResult(java.lang.Object) -> b
+    int getId() -> h
+    void registerListener(int,android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void unregisterListener(android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void startLoading() -> i
+    void onStartLoading() -> e
+    void forceLoad() -> j
+    void onForceLoad() -> a
+    void stopLoading() -> k
+    void onStopLoading() -> f
+    void reset() -> l
+    void onReset() -> g
+    void onContentChanged() -> m
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.content.Loader$ForceLoadContentObserver -> android.support.v4.a.e:
+    android.support.v4.content.Loader this$0 -> a
+    boolean deliverSelfNotifications() -> deliverSelfNotifications
+    void onChange(boolean) -> onChange
+android.support.v4.content.Loader$OnLoadCompleteListener -> android.support.v4.a.f:
+    void onLoadComplete(android.support.v4.content.Loader,java.lang.Object) -> a
+android.support.v4.content.ModernAsyncTask -> android.support.v4.a.g:
+    java.util.concurrent.ThreadFactory sThreadFactory -> a
+    java.util.concurrent.BlockingQueue sPoolWorkQueue -> b
+    java.util.concurrent.Executor THREAD_POOL_EXECUTOR -> d
+    android.support.v4.content.ModernAsyncTask$InternalHandler sHandler -> c
+    java.util.concurrent.Executor sDefaultExecutor -> e
+    android.support.v4.content.ModernAsyncTask$WorkerRunnable mWorker -> f
+    java.util.concurrent.FutureTask mFuture -> g
+    android.support.v4.content.ModernAsyncTask$Status mStatus -> h
+    java.util.concurrent.atomic.AtomicBoolean mTaskInvoked -> i
+    java.lang.Object postResult(java.lang.Object) -> b
+    java.lang.Object doInBackground$42af7916() -> b
+    void onPostExecute(java.lang.Object) -> a
+    void onProgressUpdate$1b4f7664() -> c
+    void onCancelled() -> a
+    boolean cancel$138603() -> d
+    android.support.v4.content.ModernAsyncTask executeOnExecutor$46741b06(java.util.concurrent.Executor) -> a
+    java.util.concurrent.atomic.AtomicBoolean access$200(android.support.v4.content.ModernAsyncTask) -> a
+    java.lang.Object access$300(android.support.v4.content.ModernAsyncTask,java.lang.Object) -> a
+    void access$400(android.support.v4.content.ModernAsyncTask,java.lang.Object) -> b
+    void access$500(android.support.v4.content.ModernAsyncTask,java.lang.Object) -> c
+android.support.v4.content.ModernAsyncTask$1 -> android.support.v4.a.h:
+    java.util.concurrent.atomic.AtomicInteger mCount -> a
+    java.lang.Thread newThread(java.lang.Runnable) -> newThread
+android.support.v4.content.ModernAsyncTask$2 -> android.support.v4.a.i:
+    android.support.v4.content.ModernAsyncTask this$0 -> a
+    java.lang.Object call() -> call
+android.support.v4.content.ModernAsyncTask$3 -> android.support.v4.a.j:
+    android.support.v4.content.ModernAsyncTask this$0 -> a
+    void done() -> done
+android.support.v4.content.ModernAsyncTask$4 -> android.support.v4.a.k:
+    int[] $SwitchMap$android$support$v4$content$ModernAsyncTask$Status -> a
+android.support.v4.content.ModernAsyncTask$AsyncTaskResult -> android.support.v4.a.l:
+    android.support.v4.content.ModernAsyncTask mTask -> a
+    java.lang.Object[] mData -> b
+android.support.v4.content.ModernAsyncTask$InternalHandler -> android.support.v4.a.m:
+    void handleMessage(android.os.Message) -> handleMessage
+android.support.v4.content.ModernAsyncTask$Status -> android.support.v4.a.n:
+    android.support.v4.content.ModernAsyncTask$Status PENDING -> a
+    android.support.v4.content.ModernAsyncTask$Status RUNNING -> b
+    android.support.v4.content.ModernAsyncTask$Status FINISHED -> c
+    android.support.v4.content.ModernAsyncTask$Status[] $VALUES -> d
+    android.support.v4.content.ModernAsyncTask$Status[] values() -> values
+    android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String) -> valueOf
+android.support.v4.content.ModernAsyncTask$WorkerRunnable -> android.support.v4.a.o:
+    java.lang.Object[] mParams -> b
+android.support.v4.os.ParcelableCompat -> android.support.v4.b.a:
+    android.os.Parcelable$Creator newCreator(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.os.ParcelableCompat$CompatCreator -> android.support.v4.b.b:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorCallbacks -> android.support.v4.b.c:
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+    java.lang.Object[] newArray(int) -> a
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2 -> android.support.v4.b.d:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.util.DebugUtils -> android.support.v4.c.a:
+    void buildShortClassTag(java.lang.Object,java.lang.StringBuilder) -> a
+android.support.v4.util.LogWriter -> android.support.v4.c.b:
+    java.lang.String mTag -> a
+    java.lang.StringBuilder mBuilder -> b
+    void close() -> close
+    void flush() -> flush
+    void write(char[],int,int) -> write
+    void flushBuilder() -> a
+android.support.v4.util.TimeUtils -> android.support.v4.c.c:
+    java.lang.Object sFormatSync -> a
+    char[] sFormatStr -> b
+    int printField$6419d3d2(char[],int,char,int,boolean) -> a
+    void formatDuration$112769eb(long,java.io.PrintWriter) -> b
+    void formatDuration(long,java.io.PrintWriter) -> a
+    void formatDuration(long,long,java.io.PrintWriter) -> a
+android.support.v4.view.KeyEventCompat -> android.support.v4.view.a:
+    android.support.v4.view.KeyEventCompat$KeyEventVersionImpl IMPL -> a
+    boolean hasModifiers$79c6ddc0(android.view.KeyEvent) -> a
+    boolean hasNoModifiers(android.view.KeyEvent) -> b
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl -> android.support.v4.view.b:
+    int metaStateFilterDirectionalModifiers$2e71581f(int,int,int,int) -> a
+    int normalizeMetaState(int) -> c
+    boolean metaStateHasModifiers$255f299(int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl -> android.support.v4.view.c:
+    boolean metaStateHasModifiers$255f299(int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl -> android.support.v4.view.d:
+    boolean metaStateHasModifiers$255f299(int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.MotionEventCompat -> android.support.v4.view.e:
+    android.support.v4.view.MotionEventCompat$MotionEventVersionImpl IMPL -> a
+    int getActionIndex(android.view.MotionEvent) -> a
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$BaseMotionEventVersionImpl -> android.support.v4.view.f:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$EclairMotionEventVersionImpl -> android.support.v4.view.g:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$MotionEventVersionImpl -> android.support.v4.view.h:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.PagerAdapter -> android.support.v4.view.i:
+    android.database.DataSetObservable mObservable -> a
+    int getCount() -> a
+    boolean isViewFromObject$171eb1dd() -> b
+    void registerDataSetObserver(android.database.DataSetObserver) -> a
+    void unregisterDataSetObserver(android.database.DataSetObserver) -> b
+android.support.v4.view.PagerTitleStrip -> android.support.v4.view.PagerTitleStrip:
+    android.support.v4.view.ViewPager mPager -> a
+    android.widget.TextView mPrevText -> b
+    android.widget.TextView mCurrText -> c
+    android.widget.TextView mNextText -> d
+    int mLastKnownCurrentPage -> e
+    float mLastKnownPositionOffset -> f
+    int mScaledTextSpacing -> g
+    boolean mUpdatingText -> h
+    boolean mUpdatingPositions -> i
+    android.support.v4.view.PagerTitleStrip$PageListener mPageListener -> j
+    int[] ATTRS -> k
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void updateText$7a69ae8(int) -> a
+    void requestLayout() -> requestLayout
+    void updateAdapter(android.support.v4.view.PagerAdapter,android.support.v4.view.PagerAdapter) -> a
+    void updateTextPositions(int,float) -> a
+    void onMeasure(int,int) -> onMeasure
+    void onLayout(boolean,int,int,int,int) -> onLayout
+android.support.v4.view.PagerTitleStrip$PageListener -> android.support.v4.view.j:
+    int mScrollState -> b
+    android.support.v4.view.PagerTitleStrip this$0 -> a
+    void onPageScrolled$486775f1(int,float) -> a
+    void onPageSelected$13462e() -> a
+    void onPageScrollStateChanged(int) -> a
+    void onChanged() -> onChanged
+android.support.v4.view.VelocityTrackerCompat -> android.support.v4.view.k:
+    android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl IMPL -> a
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl -> android.support.v4.view.l:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl -> android.support.v4.view.m:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl -> android.support.v4.view.n:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.ViewCompat -> android.support.v4.view.o:
+    android.support.v4.view.ViewCompat$ViewCompatImpl IMPL -> a
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompat$BaseViewCompatImpl -> android.support.v4.view.p:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompat$GBViewCompatImpl -> android.support.v4.view.q:
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompat$ICSViewCompatImpl -> android.support.v4.view.r:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+android.support.v4.view.ViewCompat$ViewCompatImpl -> android.support.v4.view.s:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewConfigurationCompat -> android.support.v4.view.t:
+    android.support.v4.view.ViewConfigurationCompat$ViewConfigurationVersionImpl IMPL -> a
+    int getScaledPagingTouchSlop(android.view.ViewConfiguration) -> a
+android.support.v4.view.ViewConfigurationCompat$BaseViewConfigurationVersionImpl -> android.support.v4.view.u:
+    int getScaledPagingTouchSlop(android.view.ViewConfiguration) -> a
+android.support.v4.view.ViewConfigurationCompat$FroyoViewConfigurationVersionImpl -> android.support.v4.view.v:
+    int getScaledPagingTouchSlop(android.view.ViewConfiguration) -> a
+android.support.v4.view.ViewConfigurationCompat$ViewConfigurationVersionImpl -> android.support.v4.view.w:
+    int getScaledPagingTouchSlop(android.view.ViewConfiguration) -> a
+android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
+    int[] LAYOUT_ATTRS -> a
+    java.util.Comparator COMPARATOR -> b
+    android.view.animation.Interpolator sInterpolator -> c
+    java.util.ArrayList mItems -> d
+    android.support.v4.view.PagerAdapter mAdapter -> e
+    int mCurItem -> f
+    int mRestoredCurItem -> g
+    android.os.Parcelable mRestoredAdapterState -> h
+    java.lang.ClassLoader mRestoredClassLoader -> i
+    android.widget.Scroller mScroller -> j
+    int mPageMargin -> k
+    android.graphics.drawable.Drawable mMarginDrawable -> l
+    int mTopPageBounds -> m
+    int mBottomPageBounds -> n
+    int mChildWidthMeasureSpec -> o
+    int mChildHeightMeasureSpec -> p
+    boolean mInLayout -> q
+    boolean mScrollingCacheEnabled -> r
+    boolean mPopulatePending -> s
+    boolean mScrolling -> t
+    int mOffscreenPageLimit -> u
+    boolean mIsBeingDragged -> v
+    boolean mIsUnableToDrag -> w
+    int mTouchSlop -> x
+    float mInitialMotionX -> y
+    float mLastMotionX -> z
+    float mLastMotionY -> A
+    int mActivePointerId -> B
+    android.view.VelocityTracker mVelocityTracker -> C
+    int mMinimumVelocity -> D
+    int mMaximumVelocity -> E
+    int mFlingDistance -> F
+    boolean mFakeDragging -> G
+    android.support.v4.widget.EdgeEffectCompat mLeftEdge -> H
+    android.support.v4.widget.EdgeEffectCompat mRightEdge -> I
+    boolean mFirstLayout -> J
+    boolean mCalledSuper -> K
+    int mDecorChildCount -> L
+    android.support.v4.view.ViewPager$OnPageChangeListener mOnPageChangeListener -> M
+    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> N
+    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> O
+    int mScrollState -> P
+    void setScrollState(int) -> a
+    android.support.v4.view.PagerAdapter getAdapter() -> a
+    void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener) -> a
+    void setCurrentItem$2563266(int) -> b
+    int getCurrentItem() -> b
+    void setCurrentItemInternal(int,boolean,boolean) -> a
+    void setCurrentItemInternal(int,boolean,boolean,int) -> a
+    android.support.v4.view.ViewPager$OnPageChangeListener setInternalPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener) -> a
+    boolean verifyDrawable(android.graphics.drawable.Drawable) -> verifyDrawable
+    void drawableStateChanged() -> drawableStateChanged
+    void addNewItem$255f295(int) -> c
+    void populate() -> d
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void addView(android.view.View,int,android.view.ViewGroup$LayoutParams) -> addView
+    android.support.v4.view.ViewPager$ItemInfo infoForChild$31e08638() -> e
+    android.support.v4.view.ViewPager$ItemInfo infoForAnyChild(android.view.View) -> a
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onMeasure(int,int) -> onMeasure
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void computeScroll() -> computeScroll
+    void pageScrolled(int) -> d
+    void completeScroll() -> f
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void draw(android.graphics.Canvas) -> draw
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onSecondaryPointerUp(android.view.MotionEvent) -> a
+    void endDrag() -> g
+    void setScrollingCacheEnabled(boolean) -> a
+    boolean canScroll(android.view.View,boolean,int,int,int) -> a
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    boolean arrowScroll(int) -> e
+    boolean pageLeft() -> h
+    void addFocusables(java.util.ArrayList,int,int) -> addFocusables
+    void addTouchables(java.util.ArrayList) -> addTouchables
+    boolean onRequestFocusInDescendants(int,android.graphics.Rect) -> onRequestFocusInDescendants
+    boolean dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent) -> dispatchPopulateAccessibilityEvent
+    android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
+    boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
+    int[] access$100() -> c
+android.support.v4.view.ViewPager$1 -> android.support.v4.view.x:
+    int compare(java.lang.Object,java.lang.Object) -> compare
+android.support.v4.view.ViewPager$2 -> android.support.v4.view.y:
+    float getInterpolation(float) -> getInterpolation
+android.support.v4.view.ViewPager$Decor -> android.support.v4.view.z:
+android.support.v4.view.ViewPager$ItemInfo -> android.support.v4.view.aa:
+    java.lang.Object object -> a
+    int position -> b
+    boolean scrolling -> c
+android.support.v4.view.ViewPager$LayoutParams -> android.support.v4.view.ViewPager$LayoutParams:
+    boolean isDecor -> a
+    int gravity -> b
+android.support.v4.view.ViewPager$OnAdapterChangeListener -> android.support.v4.view.ab:
+android.support.v4.view.ViewPager$OnPageChangeListener -> android.support.v4.view.ac:
+    void onPageScrolled$486775f1(int,float) -> a
+    void onPageSelected$13462e() -> a
+    void onPageScrollStateChanged(int) -> a
+android.support.v4.view.ViewPager$SavedState -> android.support.v4.view.ViewPager$SavedState:
+    int position -> a
+    android.os.Parcelable adapterState -> b
+    java.lang.ClassLoader loader -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    java.lang.String toString() -> toString
+android.support.v4.view.ViewPager$SavedState$1 -> android.support.v4.view.ad:
+    java.lang.Object[] newArray(int) -> a
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+android.support.v4.widget.CursorAdapter -> android.support.v4.d.a:
+    boolean mDataValid -> a
+    boolean mAutoRequery -> b
+    android.database.Cursor mCursor -> c
+    android.content.Context mContext -> d
+    int mRowIDColumn -> e
+    android.support.v4.widget.CursorAdapter$ChangeObserver mChangeObserver -> f
+    android.database.DataSetObserver mDataSetObserver -> g
+    android.support.v4.widget.CursorFilter mCursorFilter -> h
+    android.widget.FilterQueryProvider mFilterQueryProvider -> i
+    android.database.Cursor getCursor() -> a
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    boolean hasStableIds() -> hasStableIds
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    android.view.View getDropDownView(int,android.view.View,android.view.ViewGroup) -> getDropDownView
+    android.view.View newView$4b8874c5(android.view.ViewGroup) -> a
+    android.view.View newDropDownView$4b8874c5(android.view.ViewGroup) -> b
+    void bindView$4693bf34(android.view.View,android.database.Cursor) -> a
+    void changeCursor(android.database.Cursor) -> a
+    android.database.Cursor swapCursor(android.database.Cursor) -> b
+    java.lang.CharSequence convertToString(android.database.Cursor) -> c
+    android.database.Cursor runQueryOnBackgroundThread(java.lang.CharSequence) -> a
+    android.widget.Filter getFilter() -> getFilter
+    void onContentChanged() -> b
+android.support.v4.widget.CursorAdapter$ChangeObserver -> android.support.v4.d.b:
+    android.support.v4.widget.CursorAdapter this$0 -> a
+    boolean deliverSelfNotifications() -> deliverSelfNotifications
+    void onChange(boolean) -> onChange
+android.support.v4.widget.CursorFilter -> android.support.v4.d.c:
+    android.support.v4.widget.CursorFilter$CursorFilterClient mClient -> a
+    java.lang.CharSequence convertResultToString(java.lang.Object) -> convertResultToString
+    android.widget.Filter$FilterResults performFiltering(java.lang.CharSequence) -> performFiltering
+    void publishResults(java.lang.CharSequence,android.widget.Filter$FilterResults) -> publishResults
+android.support.v4.widget.CursorFilter$CursorFilterClient -> android.support.v4.d.d:
+    java.lang.CharSequence convertToString(android.database.Cursor) -> c
+    android.database.Cursor runQueryOnBackgroundThread(java.lang.CharSequence) -> a
+    android.database.Cursor getCursor() -> a
+    void changeCursor(android.database.Cursor) -> a
+android.support.v4.widget.EdgeEffectCompat -> android.support.v4.d.e:
+    java.lang.Object mEdgeEffect -> a
+    android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl IMPL -> b
+    void setSize(int,int) -> a
+    boolean isFinished() -> a
+    void finish() -> b
+    boolean onPull(float) -> a
+    boolean onRelease() -> c
+    boolean draw(android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl -> android.support.v4.d.f:
+    java.lang.Object newEdgeEffect(android.content.Context) -> a
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl -> android.support.v4.d.g:
+    java.lang.Object newEdgeEffect(android.content.Context) -> a
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl -> android.support.v4.d.h:
+    java.lang.Object newEdgeEffect(android.content.Context) -> a
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.ResourceCursorAdapter -> android.support.v4.d.i:
+    int mLayout -> j
+    int mDropDownLayout -> k
+    android.view.LayoutInflater mInflater -> l
+    android.view.View newView$4b8874c5(android.view.ViewGroup) -> a
+    android.view.View newDropDownView$4b8874c5(android.view.ViewGroup) -> b
+android.support.v4.widget.SimpleCursorAdapter -> android.support.v4.d.j:
+    int[] mFrom -> j
+    int[] mTo -> k
+    int mStringConversionColumn -> m
+    android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter mCursorToStringConverter -> n
+    android.support.v4.widget.SimpleCursorAdapter$ViewBinder mViewBinder -> o
+    java.lang.String[] mOriginalFrom -> l
+    void bindView$4693bf34(android.view.View,android.database.Cursor) -> a
+    void setViewBinder(android.support.v4.widget.SimpleCursorAdapter$ViewBinder) -> a
+    java.lang.CharSequence convertToString(android.database.Cursor) -> c
+    void findColumns(java.lang.String[]) -> a
+    android.database.Cursor swapCursor(android.database.Cursor) -> b
+android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter -> android.support.v4.d.k:
+    java.lang.CharSequence convertToString$57f82248() -> a
+android.support.v4.widget.SimpleCursorAdapter$ViewBinder -> android.support.v4.d.l:
+    boolean setViewValue$2e05ad4d(android.view.View,android.database.Cursor) -> a
+com.simbiosys.apps.foodfast.FoodFastApp -> com.simbiosys.apps.foodfast.FoodFastApp:
+    com.simbiosys.apps.foodfast.utils.LocationHelper locationHelper -> c
+    int activityCount -> d
+    boolean resumed -> e
+    boolean inForeground -> f
+    android.content.SharedPreferences prefs -> a
+    android.content.SharedPreferences$Editor prefsEditor -> b
+    void onCreate() -> onCreate
+    com.simbiosys.apps.foodfast.utils.LocationHelper getLocationHelper() -> a
+    void onActivityCreated() -> b
+    void onActivityResumed$63a22f9() -> c
+    void onActivityPaused() -> d
+    void onActivityStopped() -> e
+    void onActivityDestroyed(boolean) -> a
+com.simbiosys.apps.foodfast.provider.PlacesContract -> com.simbiosys.apps.foodfast.provider.a:
+    android.net.Uri BASE_URI -> a
+com.simbiosys.apps.foodfast.provider.PlacesContract$PlaceDetails -> com.simbiosys.apps.foodfast.provider.b:
+    android.net.Uri CONTENT_URI -> a
+    android.net.Uri buildPlaceDetailUri(java.lang.String) -> a
+    java.lang.String getPlaceDetailId(android.net.Uri) -> a
+com.simbiosys.apps.foodfast.provider.PlacesContract$Places -> com.simbiosys.apps.foodfast.provider.c:
+    android.net.Uri CONTENT_URI -> a
+    android.net.Uri buildPlaceUri(java.lang.String) -> a
+    java.lang.String getPlaceId(android.net.Uri) -> a
+com.simbiosys.apps.foodfast.provider.PlacesDatabase -> com.simbiosys.apps.foodfast.provider.d:
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.simbiosys.apps.foodfast.provider.PlacesProvider -> com.simbiosys.apps.foodfast.provider.PlacesProvider:
+    com.simbiosys.apps.foodfast.provider.PlacesDatabase placesDatabase -> a
+    android.content.UriMatcher uriMatcher -> b
+    boolean onCreate() -> onCreate
+    java.lang.String getType(android.net.Uri) -> getType
+    android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String) -> query
+    android.net.Uri insert(android.net.Uri,android.content.ContentValues) -> insert
+    int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[]) -> update
+    int delete(android.net.Uri,java.lang.String,java.lang.String[]) -> delete
+com.simbiosys.apps.foodfast.receiver.BootReceiver -> com.simbiosys.apps.foodfast.receiver.BootReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.simbiosys.apps.foodfast.receiver.ConnectivityReceiver -> com.simbiosys.apps.foodfast.receiver.ConnectivityReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.simbiosys.apps.foodfast.receiver.LocationChangedReceiver -> com.simbiosys.apps.foodfast.receiver.LocationChangedReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.simbiosys.apps.foodfast.receiver.PassiveLocationChangedReceiver -> com.simbiosys.apps.foodfast.receiver.PassiveLocationChangedReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.simbiosys.apps.foodfast.receiver.PowerStateReceiver -> com.simbiosys.apps.foodfast.receiver.PowerStateReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.simbiosys.apps.foodfast.service.PlaceDetailsUpdateService -> com.simbiosys.apps.foodfast.service.PlaceDetailsUpdateService:
+    android.content.ContentResolver contentResolver -> a
+    android.net.ConnectivityManager connectivityManager -> b
+    android.os.PowerManager powerManager -> c
+    android.content.SharedPreferences prefs -> d
+    void onCreate() -> onCreate
+    boolean getBackgroundEnabledSetting() -> a
+    void onHandleIntent(android.content.Intent) -> onHandleIntent
+    void getPlaceDetails(java.lang.String) -> a
+    boolean addPlaceDetail(android.location.Location,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,float,java.lang.String,java.lang.String) -> a
+com.simbiosys.apps.foodfast.service.PlaceDetailsUpdateServiceICS -> com.simbiosys.apps.foodfast.service.PlaceDetailsUpdateServiceICS:
+    boolean getBackgroundEnabledSetting() -> a
+com.simbiosys.apps.foodfast.service.PlacesUpdateService -> com.simbiosys.apps.foodfast.service.PlacesUpdateService:
+    java.lang.String TAG -> e
+    android.content.ContentResolver contentResolver -> a
+    android.net.ConnectivityManager connectivityManager -> b
+    android.content.SharedPreferences prefs -> c
+    android.content.SharedPreferences$Editor prefsEditor -> d
+    void onCreate() -> onCreate
+    boolean getBackgroundEnabledSetting() -> a
+    void onHandleIntent(android.content.Intent) -> onHandleIntent
+    void searchPlaces(android.location.Location,int) -> a
+    boolean addPlace(android.location.Location,android.location.Location,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,long) -> a
+    void onFinishUpdate(int) -> a
+com.simbiosys.apps.foodfast.service.PlacesUpdateServiceEclair -> com.simbiosys.apps.foodfast.service.PlacesUpdateServiceEclair:
+    void setIntentRedelivery(boolean) -> setIntentRedelivery
+com.simbiosys.apps.foodfast.service.PlacesUpdateServiceICS -> com.simbiosys.apps.foodfast.service.PlacesUpdateServiceICS:
+    boolean getBackgroundEnabledSetting() -> a
+com.simbiosys.apps.foodfast.ui.BaseActivity -> com.simbiosys.apps.foodfast.ui.BaseActivity:
+    com.simbiosys.apps.foodfast.FoodFastApp application -> m
+    com.simbiosys.apps.foodfast.utils.ActivityHelper activityHelper -> n
+    android.content.BroadcastReceiver updateResultReceiver -> o
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPostCreate(android.os.Bundle) -> onPostCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    boolean onKeyLongPress(int,android.view.KeyEvent) -> onKeyLongPress
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    com.simbiosys.apps.foodfast.utils.ActivityHelper getActivityHelper() -> d
+    com.simbiosys.apps.foodfast.utils.LocationHelper getLocationHelper() -> e
+    android.content.Intent fragmentArgumentsToIntent(android.os.Bundle) -> a
+    void performRefresh() -> f
+com.simbiosys.apps.foodfast.ui.BaseActivity$1 -> com.simbiosys.apps.foodfast.ui.a:
+    com.simbiosys.apps.foodfast.ui.BaseActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.simbiosys.apps.foodfast.ui.BaseSinglePaneActivity -> com.simbiosys.apps.foodfast.ui.BaseSinglePaneActivity:
+    android.support.v4.app.Fragment fragment -> p
+    void onCreate(android.os.Bundle) -> onCreate
+    android.support.v4.app.Fragment onCreatePane() -> g
+com.simbiosys.apps.foodfast.ui.HomeActivity -> com.simbiosys.apps.foodfast.ui.HomeActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPostCreate(android.os.Bundle) -> onPostCreate
+com.simbiosys.apps.foodfast.ui.MapScreenFragment -> com.simbiosys.apps.foodfast.ui.b:
+    com.simbiosys.apps.foodfast.ui.MapScreenFragment$IMapViewHolder mapHolder -> a
+    com.google.android.maps.MapView mapView -> b
+    com.google.android.maps.MapController mapController -> c
+    android.widget.FrameLayout mapContainer -> d
+    android.widget.ImageView userMarker -> e
+    android.widget.ImageView placeMarker -> f
+    android.widget.ImageButton btnNavigate -> g
+    android.widget.ImageButton btnPhone -> h
+    android.widget.ImageButton btnWebsite -> V
+    android.widget.ImageButton btnShare -> W
+    android.database.Cursor cursor -> X
+    com.simbiosys.apps.foodfast.utils.PopupBalloonCursorOverlay resultsOverlay -> Y
+    android.content.SharedPreferences prefs -> Z
+    android.net.Uri placeUri -> aa
+    void onAttach(android.app.Activity) -> a
+    void onCreate(android.os.Bundle) -> a
+    android.view.View onCreateView$469ccb8a(android.view.LayoutInflater,android.view.ViewGroup) -> a
+    void onActivityCreated(android.os.Bundle) -> c
+    void onResume() -> r
+    void onDestroyView() -> d
+    void onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean onOptionsItemSelected(android.view.MenuItem) -> a
+    android.support.v4.content.Loader onCreateLoader$e57f803(int) -> a
+    void onLoaderReset$5dda1f52() -> a_
+    void resetUserMarker() -> E
+    void onClick(android.view.View) -> onClick
+    void doShareAction() -> F
+    void onLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+com.simbiosys.apps.foodfast.ui.MapScreenFragment$1 -> com.simbiosys.apps.foodfast.ui.c:
+    com.simbiosys.apps.foodfast.ui.MapScreenFragment this$0 -> a
+    void onFocusChanged(com.google.android.maps.ItemizedOverlay,com.google.android.maps.OverlayItem) -> onFocusChanged
+com.simbiosys.apps.foodfast.ui.MapScreenFragment$IMapViewHolder -> com.simbiosys.apps.foodfast.ui.d:
+    com.google.android.maps.MapView getMapView() -> a
+com.simbiosys.apps.foodfast.ui.PlaceDetailFragment -> com.simbiosys.apps.foodfast.ui.e:
+    java.lang.String placeId -> a
+    java.lang.String placeReference -> b
+    android.net.Uri placeDetailsUri -> c
+    android.os.Handler handler -> d
+    android.widget.TextView textName -> e
+    android.widget.TextView textAddress -> f
+    android.widget.TextView textPhone -> g
+    android.widget.Button btnPhone -> h
+    android.widget.Button btnWebsite -> V
+    android.widget.Button btnViewMap -> W
+    android.widget.Button btnNavigate -> X
+    android.widget.Button btnShare -> Y
+    android.database.Cursor cursor -> Z
+    void onCreate(android.os.Bundle) -> a
+    void onActivityCreated(android.os.Bundle) -> c
+    android.view.View onCreateView$469ccb8a(android.view.LayoutInflater,android.view.ViewGroup) -> a
+    void onResume() -> r
+    void onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean onOptionsItemSelected(android.view.MenuItem) -> a
+    android.support.v4.content.Loader onCreateLoader$e57f803(int) -> a
+    void onLoaderReset$5dda1f52() -> a_
+    void onClick(android.view.View) -> onClick
+    void doMapAction() -> E
+    void doShareAction() -> F
+    void onLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+com.simbiosys.apps.foodfast.ui.PlaceDetailFragment$1 -> com.simbiosys.apps.foodfast.ui.f:
+    com.simbiosys.apps.foodfast.ui.PlaceDetailFragment this$0 -> a
+    java.lang.String val$name -> b
+    java.lang.String val$address -> c
+    java.lang.String val$phone -> d
+    boolean val$hasPhone -> e
+    boolean val$hasWebsite -> f
+    void run() -> run
+com.simbiosys.apps.foodfast.ui.PlaceDetailFragment$2 -> com.simbiosys.apps.foodfast.ui.g:
+    com.simbiosys.apps.foodfast.ui.PlaceDetailFragment this$0 -> a
+    java.lang.String val$loading -> b
+    void run() -> run
+com.simbiosys.apps.foodfast.ui.PlaceListFragment -> com.simbiosys.apps.foodfast.ui.h:
+    android.database.Cursor cursor -> V
+    android.support.v4.widget.SimpleCursorAdapter adapter -> W
+    android.os.Handler handler -> X
+    void onCreate(android.os.Bundle) -> a
+    void onActivityCreated(android.os.Bundle) -> c
+    void onListItemClick$42a3bb55(int) -> b
+    void onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean onOptionsItemSelected(android.view.MenuItem) -> a
+    android.support.v4.content.Loader onCreateLoader$e57f803(int) -> a
+    void onLoaderReset$5dda1f52() -> a_
+    void onLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+com.simbiosys.apps.foodfast.ui.PlaceListFragment$1 -> com.simbiosys.apps.foodfast.ui.i:
+    com.simbiosys.apps.foodfast.ui.PlaceListFragment this$0 -> a
+    boolean setViewValue$2e05ad4d(android.view.View,android.database.Cursor) -> a
+com.simbiosys.apps.foodfast.ui.PlaceListFragment$2 -> com.simbiosys.apps.foodfast.ui.j:
+    com.simbiosys.apps.foodfast.ui.PlaceListFragment this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.simbiosys.apps.foodfast.ui.phone.MapScreenActivity -> com.simbiosys.apps.foodfast.ui.phone.MapScreenActivity:
+    com.google.android.maps.MapView mapView -> p
+    android.support.v4.app.Fragment onCreatePane() -> g
+    com.google.android.maps.MapView getMapView() -> a
+com.simbiosys.apps.foodfast.ui.phone.PlaceDetailActivity -> com.simbiosys.apps.foodfast.ui.phone.PlaceDetailActivity:
+    android.support.v4.app.Fragment onCreatePane() -> g
+com.simbiosys.apps.foodfast.ui.phone.PlaceListActivity -> com.simbiosys.apps.foodfast.ui.phone.PlaceListActivity:
+    android.support.v4.app.Fragment onCreatePane() -> g
+com.simbiosys.apps.foodfast.ui.phone.SettingsActivity -> com.simbiosys.apps.foodfast.ui.phone.SettingsActivity:
+    android.support.v4.app.Fragment onCreatePane() -> g
+com.simbiosys.apps.foodfast.ui.phone.SettingsFragment -> com.simbiosys.apps.foodfast.ui.phone.a:
+    android.content.SharedPreferences prefs -> a
+    android.content.SharedPreferences$Editor editor -> b
+    void onCreate(android.os.Bundle) -> a
+    android.view.View onCreateView$469ccb8a(android.view.LayoutInflater,android.view.ViewGroup) -> a
+    void onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean onOptionsItemSelected(android.view.MenuItem) -> a
+    void onCheckChanged(android.view.View) -> a
+    void onClick(android.view.View) -> onClick
+    void showDialog(int) -> b
+    void onPositiveClick(int,java.lang.String) -> a
+com.simbiosys.apps.foodfast.ui.phone.SettingsFragment$1 -> com.simbiosys.apps.foodfast.ui.phone.b:
+    com.simbiosys.apps.foodfast.ui.phone.SettingsFragment this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.simbiosys.apps.foodfast.ui.widget.PopupBalloonView -> com.simbiosys.apps.foodfast.ui.a.a:
+    android.widget.LinearLayout layout -> a
+    android.widget.TextView textTitle -> b
+    android.widget.TextView textSubtitle -> c
+    void setData(com.google.android.maps.OverlayItem) -> a
+com.simbiosys.apps.foodfast.utils.AboutDialogHelper -> com.simbiosys.apps.foodfast.a.a:
+    void showAboutDialog(android.app.Activity) -> a
+com.simbiosys.apps.foodfast.utils.AboutDialogHelper$1 -> com.simbiosys.apps.foodfast.a.b:
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.simbiosys.apps.foodfast.utils.ActivityHelper -> com.simbiosys.apps.foodfast.a.c:
+    android.app.Activity activity -> a
+    com.simbiosys.apps.foodfast.utils.ActivityHelper createInstance(android.app.Activity) -> a
+    void onPostCreate(java.lang.CharSequence) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> a
+    boolean onOptionsItemSelected(android.view.MenuItem) -> a
+    void goHome() -> a
+    android.view.ViewGroup getActionBarCompat() -> b
+    void setActionBarTitle(java.lang.CharSequence) -> b
+    void setRefreshActionButtonCompatState(boolean) -> a
+com.simbiosys.apps.foodfast.utils.ActivityHelper$1 -> com.simbiosys.apps.foodfast.a.d:
+    com.simbiosys.apps.foodfast.utils.ActivityHelper this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.simbiosys.apps.foodfast.utils.ActivityHelper$2 -> com.simbiosys.apps.foodfast.a.e:
+    com.simbiosys.apps.foodfast.utils.ActivityHelper this$0 -> a
+    android.view.MenuItem val$item -> b
+    void onClick(android.view.View) -> onClick
+com.simbiosys.apps.foodfast.utils.ActivityHelperHoneycomb -> com.simbiosys.apps.foodfast.a.f:
+    android.view.Menu menu -> b
+    void onPostCreate(java.lang.CharSequence) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> a
+    boolean onOptionsItemSelected(android.view.MenuItem) -> a
+    void setActionBarTitle(java.lang.CharSequence) -> b
+    void setRefreshActionButtonCompatState(boolean) -> a
+com.simbiosys.apps.foodfast.utils.AppConstants -> com.simbiosys.apps.foodfast.a.g:
+    java.lang.String PLACES_API_KEY -> P
+    java.lang.String PLACES_SEARCH_BASE_URI -> a
+    java.lang.String PLACE_DETAILS_SEARCH_BASE_URI -> b
+    java.lang.String HTTP_PARAM_API_KEY -> c
+    java.lang.String HTTP_PARAM_TYPE -> d
+    int DEFAULT_RADIUS -> e
+    int DEFAULT_SENSITIVITY -> f
+    long MAX_INTERVAL -> g
+    long MAX_REFRESH_DELAY -> h
+    boolean DEFAULT_USE_GPS -> i
+    boolean DEFAULT_ACTIVE_UPDATES_ALLOWED -> j
+    boolean DEFAULT_PASSIVE_UPDATES_ALLOWED -> k
+    boolean DEFAULT_DISABLE_PASSIVE_ON_EXIT -> l
+    boolean DEFAULT_PRESERVE_BATTERY -> m
+    java.lang.String SHARED_PREFERENCES_FILE -> n
+    java.lang.String LAUNCHED_ONCE -> o
+    java.lang.String IN_BACKGROUND -> p
+    java.lang.String LAST_UPDATE_TIME -> q
+    java.lang.String LAST_UPDATE_LAT -> r
+    java.lang.String LAST_UPDATE_LONG -> s
+    java.lang.String PREF_USE_GPS -> t
+    java.lang.String PREF_ACTIVE_UPDATES_ALLOWED -> u
+    java.lang.String PREF_PASSIVE_UPDATES_ALLOWED -> v
+    java.lang.String PREF_DISABLE_PASSIVE_ON_EXIT -> w
+    java.lang.String PREF_PRESERVE_BATTERY -> x
+    java.lang.String PREF_SEARCH_RADIUS -> y
+    java.lang.String PREF_LOCATION_SENSITIVITY -> z
+    java.lang.String EXTRA_FORCE_UPDATE -> A
+    java.lang.String EXTRA_ID -> B
+    java.lang.String EXTRA_LOCATION -> C
+    java.lang.String EXTRA_RADIUS -> D
+    java.lang.String EXTRA_REFERENCE -> E
+    java.lang.String EXTRA_UPDATE_RESULT -> F
+    java.lang.String ACTION_LOCATION_PROVIDER_DISABLED -> G
+    java.lang.String ACTION_VIEW_MAP -> H
+    java.lang.String ACTION_UPDATE_SERVICE_RESULT -> I
+    java.lang.String CONSTRUCTED_PROVIDER -> J
+    boolean SUPPORTS_ECLAIR -> K
+    boolean SUPPORTS_FROYO -> L
+    boolean SUPPORTS_GINGERBREAD -> M
+    boolean SUPPORTS_HONEYCOMB -> N
+    boolean SUPPORTS_ICS -> O
+com.simbiosys.apps.foodfast.utils.CursorOverlay -> com.simbiosys.apps.foodfast.a.h:
+    android.database.Cursor cursor -> a
+    boolean shadow -> b
+    void draw(android.graphics.Canvas,com.google.android.maps.MapView,boolean) -> draw
+    com.google.android.maps.OverlayItem createItem(int) -> createItem
+    boolean onTap(int) -> onTap
+    int size() -> size
+    void changeCursor(android.database.Cursor) -> a
+com.simbiosys.apps.foodfast.utils.ILastLocationFinder -> com.simbiosys.apps.foodfast.a.i:
+    android.location.Location getLastKnownLocation(int,long) -> a
+    void setLocationListener(android.location.LocationListener) -> a
+    void cancel() -> a
+com.simbiosys.apps.foodfast.utils.IntegerInputDialog -> com.simbiosys.apps.foodfast.a.j:
+    com.simbiosys.apps.foodfast.utils.IntegerInputDialog$IntegerInputDialogListener listener -> V
+    com.simbiosys.apps.foodfast.utils.IntegerInputDialog newInstance(int,int,int,int,com.simbiosys.apps.foodfast.utils.IntegerInputDialog$IntegerInputDialogListener) -> a
+    android.app.Dialog onCreateDialog$5709b310() -> a
+    com.simbiosys.apps.foodfast.utils.IntegerInputDialog$IntegerInputDialogListener access$0(com.simbiosys.apps.foodfast.utils.IntegerInputDialog) -> a
+com.simbiosys.apps.foodfast.utils.IntegerInputDialog$1 -> com.simbiosys.apps.foodfast.a.k:
+    com.simbiosys.apps.foodfast.utils.IntegerInputDialog this$0 -> a
+    android.os.Bundle val$args -> b
+    android.widget.EditText val$editInput -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.simbiosys.apps.foodfast.utils.IntegerInputDialog$2 -> com.simbiosys.apps.foodfast.a.l:
+    com.simbiosys.apps.foodfast.utils.IntegerInputDialog this$0 -> a
+    android.os.Bundle val$args -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.simbiosys.apps.foodfast.utils.IntegerInputDialog$IntegerInputDialogListener -> com.simbiosys.apps.foodfast.a.m:
+    void onPositiveClick(int,java.lang.String) -> a
+com.simbiosys.apps.foodfast.utils.LastLocationFinder -> com.simbiosys.apps.foodfast.a.n:
+    android.content.Context context -> a
+    android.location.Criteria criteria -> b
+    android.location.LocationManager locationManager -> c
+    android.location.LocationListener listener -> d
+    android.location.LocationListener oneTimeListener -> e
+    android.location.Location getLastKnownLocation(int,long) -> a
+    void setLocationListener(android.location.LocationListener) -> a
+    void cancel() -> a
+    android.location.LocationListener access$0(com.simbiosys.apps.foodfast.utils.LastLocationFinder) -> a
+    android.location.LocationManager access$1(com.simbiosys.apps.foodfast.utils.LastLocationFinder) -> b
+    android.location.LocationListener access$2(com.simbiosys.apps.foodfast.utils.LastLocationFinder) -> c
+com.simbiosys.apps.foodfast.utils.LastLocationFinder$1 -> com.simbiosys.apps.foodfast.a.o:
+    com.simbiosys.apps.foodfast.utils.LastLocationFinder this$0 -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+com.simbiosys.apps.foodfast.utils.LastLocationFinderGingerbread -> com.simbiosys.apps.foodfast.a.p:
+    android.content.Context context -> a
+    android.location.Criteria criteria -> b
+    android.location.LocationManager locationManager -> c
+    android.location.LocationListener listener -> d
+    android.app.PendingIntent oneTimeUpdateIntent -> e
+    java.lang.String ACTION_ONE_TIME_UPDATE -> f
+    boolean registered -> g
+    android.content.BroadcastReceiver oneTimeUpdateReceiver -> h
+    android.location.Location getLastKnownLocation(int,long) -> a
+    void setLocationListener(android.location.LocationListener) -> a
+    void cancel() -> a
+    android.location.LocationListener access$0(com.simbiosys.apps.foodfast.utils.LastLocationFinderGingerbread) -> a
+    android.location.LocationManager access$1(com.simbiosys.apps.foodfast.utils.LastLocationFinderGingerbread) -> b
+    android.app.PendingIntent access$2(com.simbiosys.apps.foodfast.utils.LastLocationFinderGingerbread) -> c
+com.simbiosys.apps.foodfast.utils.LastLocationFinderGingerbread$1 -> com.simbiosys.apps.foodfast.a.q:
+    com.simbiosys.apps.foodfast.utils.LastLocationFinderGingerbread this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.simbiosys.apps.foodfast.utils.LocationHelper -> com.simbiosys.apps.foodfast.a.r:
+    android.content.Context context -> a
+    boolean activeUpdatesOn -> b
+    android.location.LocationManager locationManager -> c
+    android.location.Criteria criteria -> d
+    android.content.SharedPreferences prefs -> e
+    android.content.SharedPreferences$Editor prefsEditor -> f
+    android.app.PendingIntent activeListenerPendingIntent -> g
+    android.app.PendingIntent passiveListenerPendingIntent -> h
+    com.simbiosys.apps.foodfast.utils.ILastLocationFinder lastLocationFinder -> i
+    com.simbiosys.apps.foodfast.utils.LocationUpdateRequester locationUpdateRequester -> j
+    android.location.LocationListener oneTimeUpdateListener -> k
+    android.location.LocationListener inactiveProviderListener -> l
+    android.content.BroadcastReceiver providerDisabledReceiver -> m
+    android.content.BroadcastReceiver updateFailedReceiver -> n
+    void startPassiveUpdates() -> a
+    void stopPassiveUpdates() -> b
+    void startActiveUpdates() -> c
+    void stopActiveUpdates() -> d
+    void enableActiveLocationUpdates() -> e
+    void performRefresh() -> f
+    void updatePlaces$50b5e4d2(android.location.Location,boolean) -> a
+com.simbiosys.apps.foodfast.utils.LocationHelper$1 -> com.simbiosys.apps.foodfast.a.s:
+    com.simbiosys.apps.foodfast.utils.LocationHelper this$0 -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+com.simbiosys.apps.foodfast.utils.LocationHelper$2 -> com.simbiosys.apps.foodfast.a.t:
+    com.simbiosys.apps.foodfast.utils.LocationHelper this$0 -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+com.simbiosys.apps.foodfast.utils.LocationHelper$3 -> com.simbiosys.apps.foodfast.a.u:
+    com.simbiosys.apps.foodfast.utils.LocationHelper this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.simbiosys.apps.foodfast.utils.LocationHelper$4 -> com.simbiosys.apps.foodfast.a.v:
+    com.simbiosys.apps.foodfast.utils.LocationHelper this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.simbiosys.apps.foodfast.utils.LocationHelper$5 -> com.simbiosys.apps.foodfast.a.w:
+    com.simbiosys.apps.foodfast.utils.LocationHelper this$0 -> a
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.simbiosys.apps.foodfast.utils.LocationUpdateRequester -> com.simbiosys.apps.foodfast.a.x:
+    android.location.LocationManager locationManager -> a
+    void requestLocationUpdates(android.location.Criteria,long,long,android.app.PendingIntent) -> a
+    void requestPassiveLocationUpdates(long,long,android.app.PendingIntent) -> a
+com.simbiosys.apps.foodfast.utils.LocationUpdateRequesterCupcake -> com.simbiosys.apps.foodfast.a.y:
+    android.app.AlarmManager alarmManager -> b
+    void requestPassiveLocationUpdates(long,long,android.app.PendingIntent) -> a
+com.simbiosys.apps.foodfast.utils.LocationUpdateRequesterFroyo -> com.simbiosys.apps.foodfast.a.z:
+    void requestPassiveLocationUpdates(long,long,android.app.PendingIntent) -> a
+com.simbiosys.apps.foodfast.utils.PopupBalloonCursorOverlay -> com.simbiosys.apps.foodfast.a.aa:
+    com.google.android.maps.MapView mapView -> c
+    com.google.android.maps.MapController mapController -> d
+    com.simbiosys.apps.foodfast.ui.widget.PopupBalloonView popupBalloon -> e
+    android.view.View balloonRegion -> f
+    int balloonPaddingbottom -> g
+    int focusedIndex -> h
+    com.google.android.maps.OverlayItem focusedItem -> i
+    boolean onTap(int) -> onTap
+    void hideBalloon() -> a
+    boolean access$0(com.simbiosys.apps.foodfast.utils.PopupBalloonCursorOverlay) -> a
+com.simbiosys.apps.foodfast.utils.PopupBalloonCursorOverlay$1 -> com.simbiosys.apps.foodfast.a.ab:
+    com.simbiosys.apps.foodfast.utils.PopupBalloonCursorOverlay this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.simbiosys.apps.foodfast.utils.SimpleMenu -> com.simbiosys.apps.foodfast.a.ac:
+    android.content.Context context -> a
+    android.content.res.Resources resources -> b
+    java.util.ArrayList menuItems -> c
+    android.content.Context getContext() -> a
+    android.content.res.Resources getResources() -> b
+    android.view.MenuItem add(java.lang.CharSequence) -> add
+    android.view.MenuItem add(int) -> add
+    android.view.MenuItem add(int,int,int,java.lang.CharSequence) -> add
+    android.view.MenuItem add(int,int,int,int) -> add
+    android.view.MenuItem addInternal(int,int,java.lang.CharSequence) -> a
+    android.view.MenuItem findItem(int) -> findItem
+    void removeItem(int) -> removeItem
+    void clear() -> clear
+    int size() -> size
+    android.view.MenuItem getItem(int) -> getItem
+    android.view.SubMenu addSubMenu(java.lang.CharSequence) -> addSubMenu
+    android.view.SubMenu addSubMenu(int) -> addSubMenu
+    android.view.SubMenu addSubMenu(int,int,int,java.lang.CharSequence) -> addSubMenu
+    android.view.SubMenu addSubMenu(int,int,int,int) -> addSubMenu
+    int addIntentOptions(int,int,int,android.content.ComponentName,android.content.Intent[],android.content.Intent,int,android.view.MenuItem[]) -> addIntentOptions
+    void removeGroup(int) -> removeGroup
+    void setGroupCheckable(int,boolean,boolean) -> setGroupCheckable
+    void setGroupVisible(int,boolean) -> setGroupVisible
+    void setGroupEnabled(int,boolean) -> setGroupEnabled
+    boolean hasVisibleItems() -> hasVisibleItems
+    void close() -> close
+    boolean performShortcut(int,android.view.KeyEvent,int) -> performShortcut
+    boolean isShortcutKey(int,android.view.KeyEvent) -> isShortcutKey
+    boolean performIdentifierAction(int,int) -> performIdentifierAction
+    void setQwertyMode(boolean) -> setQwertyMode
+com.simbiosys.apps.foodfast.utils.SimpleMenuItem -> com.simbiosys.apps.foodfast.a.ad:
+    int id -> a
+    int order -> b
+    com.simbiosys.apps.foodfast.utils.SimpleMenu menu -> c
+    java.lang.CharSequence title -> d
+    java.lang.CharSequence titleCondensed -> e
+    android.graphics.drawable.Drawable iconDrawable -> f
+    int iconResId -> g
+    boolean enabled -> h
+    int getItemId() -> getItemId
+    int getOrder() -> getOrder
+    android.view.MenuItem setTitle(java.lang.CharSequence) -> setTitle
+    android.view.MenuItem setTitle(int) -> setTitle
+    java.lang.CharSequence getTitle() -> getTitle
+    android.view.MenuItem setTitleCondensed(java.lang.CharSequence) -> setTitleCondensed
+    java.lang.CharSequence getTitleCondensed() -> getTitleCondensed
+    android.view.MenuItem setIcon(android.graphics.drawable.Drawable) -> setIcon
+    android.view.MenuItem setIcon(int) -> setIcon
+    android.graphics.drawable.Drawable getIcon() -> getIcon
+    android.view.MenuItem setEnabled(boolean) -> setEnabled
+    boolean isEnabled() -> isEnabled
+    int getGroupId() -> getGroupId
+    android.view.MenuItem setIntent(android.content.Intent) -> setIntent
+    android.content.Intent getIntent() -> getIntent
+    android.view.MenuItem setShortcut(char,char) -> setShortcut
+    android.view.MenuItem setNumericShortcut(char) -> setNumericShortcut
+    char getNumericShortcut() -> getNumericShortcut
+    android.view.MenuItem setAlphabeticShortcut(char) -> setAlphabeticShortcut
+    char getAlphabeticShortcut() -> getAlphabeticShortcut
+    android.view.MenuItem setCheckable(boolean) -> setCheckable
+    boolean isCheckable() -> isCheckable
+    android.view.MenuItem setChecked(boolean) -> setChecked
+    boolean isChecked() -> isChecked
+    android.view.MenuItem setVisible(boolean) -> setVisible
+    boolean isVisible() -> isVisible
+    boolean hasSubMenu() -> hasSubMenu
+    android.view.SubMenu getSubMenu() -> getSubMenu
+    android.view.MenuItem setOnMenuItemClickListener(android.view.MenuItem$OnMenuItemClickListener) -> setOnMenuItemClickListener
+    android.view.ContextMenu$ContextMenuInfo getMenuInfo() -> getMenuInfo
+    void setShowAsAction(int) -> setShowAsAction
+    android.view.MenuItem setShowAsActionFlags(int) -> setShowAsActionFlags
+    android.view.MenuItem setActionView(android.view.View) -> setActionView
+    android.view.MenuItem setActionView(int) -> setActionView
+    android.view.View getActionView() -> getActionView
+    android.view.MenuItem setActionProvider(android.view.ActionProvider) -> setActionProvider
+    android.view.ActionProvider getActionProvider() -> getActionProvider
+    boolean expandActionView() -> expandActionView
+    boolean collapseActionView() -> collapseActionView
+    boolean isActionViewExpanded() -> isActionViewExpanded
+    android.view.MenuItem setOnActionExpandListener(android.view.MenuItem$OnActionExpandListener) -> setOnActionExpandListener

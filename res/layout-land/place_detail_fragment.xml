@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/img_text_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp" >
+
+            <ImageView
+                android:id="@+id/image_place_thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/description_img_place_thumbnail"
+                android:padding="5dp"
+                android:src="@drawable/img_not_available" />
+
+            <LinearLayout
+                android:id="@+id/text_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp" >
+
+                <TextView
+                    android:id="@+id/text_name"
+                    style="@style/PlaceName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading" />
+
+                <TextView
+                    android:id="@+id/text_address"
+                    style="@style/PlaceAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading" />
+
+                <TextView
+                    android:id="@+id/text_phone"
+                    style="@style/PlacePhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/GradientSeparatorThick" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_view_on_map"
+                style="@style/PlaceDetailActionButton"
+                android:contentDescription="@string/description_btn_view_on_map"
+                android:drawableRight="@drawable/btn_map"
+                android:text="@string/btn_view_on_map" />
+
+            <Button
+                android:id="@+id/btn_call_phone"
+                style="@style/PlaceDetailActionButton"
+                android:contentDescription="@string/description_btn_call"
+                android:drawableRight="@drawable/btn_call"
+                android:text="@string/btn_call_phone" />
+        </LinearLayout>
+
+        <View style="@style/GradientSeparatorThin" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_navigate_to"
+                style="@style/PlaceDetailActionButton"
+                android:contentDescription="@string/description_btn_navigate"
+                android:drawableRight="@drawable/btn_navigate"
+                android:text="@string/btn_navigate_to" />
+
+            <Button
+                android:id="@+id/btn_visit_website"
+                style="@style/PlaceDetailActionButton"
+                android:contentDescription="@string/description_btn_website"
+                android:drawableRight="@drawable/btn_website"
+                android:text="@string/btn_visit_website" />
+        </LinearLayout>
+
+        <View style="@style/GradientSeparatorThin" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_share"
+                style="@style/PlaceDetailActionButton"
+                android:contentDescription="@string/description_btn_share"
+                android:drawableRight="@drawable/btn_share"
+                android:text="@string/btn_share" />
+
+            <View
+                android:id="@+id/view1"
+                style="@style/PlaceDetailActionButton" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
