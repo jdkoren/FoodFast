@@ -1,3 +1,11 @@
 FoodFast: A demo application for Android.
 
 Uses location-based services and Google Places API to find restaurants and food near the user's present location.
+
+Instructions:
+
+In order to run the app and have it work properly, you must have a valid API key for the Google Maps library. This key is tied to the keystore used to build and launch the project. Instructions for generating a Maps API key can be found at http://code.google.com/android/add-ons/google-apis/mapkey.html#getdebugfingerprint.
+
+You will also need a valid API key for use with Google Places. This key is tied to a Google account. You can register for access to Google APIs and generate an API key at https://code.google.com/apis/console/.
+
+Open the AppConstants.java file (in the .utils package) and insert your API keys where noted.

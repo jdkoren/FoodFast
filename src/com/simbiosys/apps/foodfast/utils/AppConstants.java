@@ -10,14 +10,18 @@ import android.os.Build;
 public class AppConstants {
 
 	/**
-	 * Google Maps API key. 
+	 * API key for Google Maps. 
 	 */
 	public static final String MAPS_API_KEY = "YOUR MAPS API KEY";
 
 	/**
-	 * Constants for place searches
+	 * API key for Google Places.
 	 */
 	private static String PLACES_API_KEY = "YOUR PLACES API KEY";
+	
+	/**
+	 * Constants for place searches
+	 */
 	public static String PLACES_SEARCH_BASE_URI = "https://maps.googleapis.com/maps/api/place/search/xml?sensor=true";
 	public static String PLACE_DETAILS_SEARCH_BASE_URI = "https://maps.googleapis.com/maps/api/place/details/xml?sensor=true";
 	public static String HTTP_PARAM_API_KEY = "&key=" + PLACES_API_KEY;
