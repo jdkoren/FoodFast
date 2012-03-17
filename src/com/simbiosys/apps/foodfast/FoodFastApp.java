@@ -15,7 +15,6 @@ import com.simbiosys.apps.foodfast.utils.LocationHelper;
  * 
  */
 public class FoodFastApp extends Application {
-	@SuppressWarnings("unused")
 	private static final String TAG = "FoodFastApp";
 
 	private LocationHelper locationHelper;

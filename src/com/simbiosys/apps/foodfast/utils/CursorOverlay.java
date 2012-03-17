@@ -15,7 +15,6 @@ import com.simbiosys.apps.foodfast.provider.PlacesContract.Places;
  *
  */
 public class CursorOverlay extends ItemizedOverlay<OverlayItem> {
-	@SuppressWarnings("unused")
 	private static final String TAG = "CursorOverlay";
 
 	protected Cursor cursor;

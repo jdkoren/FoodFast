@@ -25,7 +25,6 @@ import com.simbiosys.apps.foodfast.utils.LocationHelper;
  * 
  */
 public abstract class BaseActivity extends FragmentActivity {
-	@SuppressWarnings("unused")
 	private static final String TAG = "BaseActivity";
 
 	protected FoodFastApp application;

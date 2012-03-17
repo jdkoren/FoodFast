@@ -6,6 +6,7 @@ import android.net.NetworkInfo;
  * Platform-specific implementation of PlaceDetailsUpdateService for Ice Cream Sandwich and later.
  */
 public class PlaceDetailsUpdateServiceICS extends PlaceDetailsUpdateService {
+	private static final String TAG = "PlaceDetailsUpdateServiceICS";
 
 	@Override
 	protected boolean getBackgroundEnabledSetting() {

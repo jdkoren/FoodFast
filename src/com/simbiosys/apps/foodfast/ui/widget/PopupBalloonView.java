@@ -16,7 +16,6 @@ import com.simbiosys.apps.foodfast.R;
  * A view used with the PopupBalloonCursorOverlay.
  */
 public class PopupBalloonView<Item extends OverlayItem> extends FrameLayout {
-	@SuppressWarnings("unused")
 	private static final String TAG = "PopupBalloonView";
 	
 	protected LinearLayout layout;

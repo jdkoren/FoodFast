@@ -13,7 +13,8 @@ import android.net.NetworkInfo;
  * 
  */
 public class ConnectivityReceiver extends BroadcastReceiver {
-
+	private static final String TAG = "ConnectivityReceiver";
+	
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		ConnectivityManager connectivityManager = (ConnectivityManager) context

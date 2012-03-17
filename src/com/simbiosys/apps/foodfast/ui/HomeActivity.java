@@ -5,7 +5,6 @@ import android.os.Bundle;
 import com.simbiosys.apps.foodfast.R;
 
 public class HomeActivity extends BaseActivity {
-	@SuppressWarnings("unused")
 	private static final String TAG = "HomeActivity";
 
 	@Override

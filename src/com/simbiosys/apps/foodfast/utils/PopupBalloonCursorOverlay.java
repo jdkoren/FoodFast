@@ -24,7 +24,6 @@ import com.simbiosys.apps.foodfast.ui.widget.PopupBalloonView;
  * 
  */
 public class PopupBalloonCursorOverlay extends CursorOverlay {
-	@SuppressWarnings("unused")
 	private static final String TAG = "PopupBalloonCursorOverlay";
 
 	protected MapView mapView;

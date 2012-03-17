@@ -12,6 +12,8 @@ import com.simbiosys.apps.foodfast.R;
  * 
  */
 public abstract class BaseSinglePaneActivity extends BaseActivity {
+	private static final String TAG = "BaseSinglePaneActivity";
+	
 	private Fragment fragment;
 
 	@Override

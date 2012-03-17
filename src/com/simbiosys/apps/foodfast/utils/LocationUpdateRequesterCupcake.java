@@ -9,7 +9,6 @@ import android.location.LocationManager;
  * 
  */
 public class LocationUpdateRequesterCupcake extends LocationUpdateRequester {
-	@SuppressWarnings("unused")
 	private static final String TAG = "LocationUpdateRequesterCupcake";
 
 	protected AlarmManager alarmManager;

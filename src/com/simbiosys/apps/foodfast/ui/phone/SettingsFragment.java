@@ -25,7 +25,6 @@ import com.simbiosys.apps.foodfast.utils.IntegerInputDialog.IntegerInputDialogLi
 
 public class SettingsFragment extends Fragment implements OnClickListener,
 		IntegerInputDialogListener {
-	@SuppressWarnings("unused")
 	private static final String TAG = "SettingsFragment";
 
 	private static final int SEARCH_RADIUS_DIALOG = 0;

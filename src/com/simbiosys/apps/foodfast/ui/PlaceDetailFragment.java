@@ -27,7 +27,6 @@ import com.simbiosys.apps.foodfast.utils.AppConstants;
 
 public class PlaceDetailFragment extends Fragment implements LoaderCallbacks<Cursor>,
 		OnClickListener {
-	@SuppressWarnings("unused")
 	private static final String TAG = "PlaceDetailFragment";
 
 	protected String placeId = null;

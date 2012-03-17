@@ -20,6 +20,7 @@ import android.location.LocationManager;
  * 
  */
 public class BootReceiver extends BroadcastReceiver {
+	private static final String TAG = "BootReceiver";
 
 	@Override
 	public void onReceive(Context context, Intent intent) {

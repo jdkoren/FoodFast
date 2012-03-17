@@ -18,7 +18,6 @@ import com.simbiosys.apps.foodfast.utils.AboutDialogHelper;
 import com.simbiosys.apps.foodfast.utils.AppConstants;
 
 public class DashboardFragment extends Fragment {
-	@SuppressWarnings("unused")
 	private static final String TAG = "DashboardFragment";
 
 	@Override

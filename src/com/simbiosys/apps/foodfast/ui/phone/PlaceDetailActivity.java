@@ -6,7 +6,6 @@ import com.simbiosys.apps.foodfast.ui.BaseSinglePaneActivity;
 import com.simbiosys.apps.foodfast.ui.PlaceDetailFragment;
 
 public class PlaceDetailActivity extends BaseSinglePaneActivity {
-	@SuppressWarnings("unused")
 	private static final String TAG = "PlaceDetailActivity";
 
 	@Override

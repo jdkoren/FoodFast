@@ -9,7 +9,6 @@ import android.location.LocationManager;
  *
  */
 public abstract class LocationUpdateRequester {
-	@SuppressWarnings("unused")
 	private static final String TAG = "LocationUpdateRequester";
 
 	protected LocationManager locationManager;

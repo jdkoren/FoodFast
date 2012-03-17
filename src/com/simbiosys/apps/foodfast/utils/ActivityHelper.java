@@ -24,7 +24,6 @@ import com.simbiosys.apps.foodfast.ui.HomeActivity;
  * 
  */
 public class ActivityHelper {
-	@SuppressWarnings("unused")
 	private static final String TAG = "ActivityHelper";
 
 	protected Activity activity;

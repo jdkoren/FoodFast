@@ -7,7 +7,6 @@ import android.location.LocationManager;
  * Platform-specific implementation of LocationUpdateRequester for Froyo and later.
  */
 public class LocationUpdateRequesterFroyo extends LocationUpdateRequester {
-	@SuppressWarnings("unused")
 	private static final String TAG = "LocationUpdateRequesterFroyo";
 
 	public LocationUpdateRequesterFroyo(LocationManager locationManager) {

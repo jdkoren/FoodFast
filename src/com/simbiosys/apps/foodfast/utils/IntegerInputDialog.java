@@ -17,7 +17,6 @@ import com.simbiosys.apps.foodfast.R;
  * and message.
  */
 public class IntegerInputDialog extends DialogFragment {
-	@SuppressWarnings("unused")
 	private static final String TAG = "IntegerInputDialog";
 
 	/**

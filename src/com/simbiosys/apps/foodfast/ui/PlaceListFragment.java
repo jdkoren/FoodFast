@@ -27,7 +27,6 @@ import com.simbiosys.apps.foodfast.ui.phone.SettingsActivity;
 import com.simbiosys.apps.foodfast.utils.AppConstants;
 
 public class PlaceListFragment extends ListFragment implements LoaderCallbacks<Cursor> {
-	@SuppressWarnings("unused")
 	private static final String TAG = "PlaceListFragment";
 
 	protected Cursor cursor = null;

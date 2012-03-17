@@ -16,6 +16,7 @@ import android.content.pm.PackageManager;
  * 
  */
 public class PowerStateReceiver extends BroadcastReceiver {
+	private static final String TAG = "PowerStateReceiver";
 
 	@Override
 	public void onReceive(Context context, Intent intent) {

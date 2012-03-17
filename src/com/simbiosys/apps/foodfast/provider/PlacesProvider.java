@@ -20,7 +20,6 @@ import com.simbiosys.apps.foodfast.provider.PlacesDatabase.Tables;
  * an update service.
  */
 public class PlacesProvider extends ContentProvider {
-	@SuppressWarnings("unused")
 	private static final String TAG = "PlacesProvider";
 
 	private PlacesDatabase placesDatabase;

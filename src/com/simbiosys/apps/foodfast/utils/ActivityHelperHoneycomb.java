@@ -13,7 +13,6 @@ import android.view.MenuItem;
  * 
  */
 public class ActivityHelperHoneycomb extends ActivityHelper {
-	@SuppressWarnings("unused")
 	private static final String TAG = "ActivityHelperHoneycomb";
 
 	protected Menu menu;

@@ -4,7 +4,8 @@ package com.simbiosys.apps.foodfast.service;
  * Platform-specific implementation of PlacesUpdateService for Eclair and later.
  */
 public class PlacesUpdateServiceEclair extends PlacesUpdateService {
-
+	private static final String TAG = "PlacesUpdateServiceEclair";
+		
 	/*
 	 * (non-Javadoc)
 	 * 

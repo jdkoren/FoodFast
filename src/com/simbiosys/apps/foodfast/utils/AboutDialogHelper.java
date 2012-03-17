@@ -9,7 +9,6 @@ import android.view.View;
 import com.simbiosys.apps.foodfast.R;
 
 public class AboutDialogHelper {
-	@SuppressWarnings("unused")
 	private static final String TAG = "AboutDialogHelper";
 
 	public static void showAboutDialog(Activity activity) {
